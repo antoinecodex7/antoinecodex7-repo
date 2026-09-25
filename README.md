@@ -27,6 +27,7 @@ ANTOINE CODEX CORE. Всички видими текстове по подраз
    - **Accueil**: всички текстове на началната страница са редактируеми; празно поле = текстът по подразбиране.
    - **Contenu de la page d’accueil statique**: съществуващото съдържание на началната страница не се изтрива; можете да го покажете под секциите или вместо тях.
    - **Effets visuels**: WebGL вкл./изкл., плътност на частиците, hover ефекти.
+   - **Лого:** логото AC е вградено горе вляво до името. Ако зададете друго в *Identité du site → Logo*, то го заменя (името остава до него).
 5. *Apparence → Menus*: задайте менюта за „Navigation principale“, „Pied de page“, „Liens légaux“ (без меню темата показва автоматично ключовите страници).
 6. *Apparence → ANTOINE CODEX CORE*: свързване на чатбота (т. 2).
 
@@ -166,7 +167,7 @@ antoine-codex-immersive/
   assets/css/      main.css (15.5 KB gzip), fonts.css, editor.css
   assets/js/       main.js (4.2 KB gzip), field.js (7.8 KB gzip, зарежда се отложено), core-chat.js (5.2 KB gzip)
   assets/fonts/    Syne, Manrope, JetBrains Mono (woff2, локално — без Google Fonts, RGPD) + лицензи OFL
-  assets/img/      field-poster.webp/.jpg (статичен вариант на полето)
+  assets/img/      logo-ac.webp/.png (логото в хедъра), field-poster.webp/.jpg (статичен вариант на полето)
   languages/       antoine-codex-immersive.pot, en_US.po, en_US.mo
 ```
 

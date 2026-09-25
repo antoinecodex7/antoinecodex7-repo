@@ -22,17 +22,17 @@ defined( 'ABSPATH' ) || exit;
 <header class="site-header" data-header>
 	<div class="site-header__inner">
 		<a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<?php if ( has_custom_logo() ) : ?>
-				<?php
-				$logo_id = get_theme_mod( 'custom_logo' );
-				echo wp_get_attachment_image( $logo_id, 'full', false, array( 'class' => 'brand__logo', 'alt' => get_bloginfo( 'name' ) ) );
-				?>
-			<?php else : ?>
-				<span class="brand__mark" aria-hidden="true">
-					<svg viewBox="0 0 40 40" width="34" height="34"><path d="M14 6H8a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h6M26 6h6a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2h-6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="3.2" fill="#FF5500"/><path d="M13 20h3.5M23.5 20H27" stroke="#C9A45C" stroke-width="1.5"/></svg>
-				</span>
-				<span class="brand__word"><span>ANTOINE</span> <span class="brand__codex">CODEX</span></span>
-			<?php endif; ?>
+			<span class="brand__mark">
+				<?php if ( has_custom_logo() ) : ?>
+					<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full', false, array( 'class' => 'brand__logo', 'alt' => '' ) ); ?>
+				<?php else : ?>
+					<picture>
+						<source type="image/webp" srcset="<?php echo esc_url( ACX_URI . '/assets/img/logo-ac.webp' ); ?>">
+						<img class="brand__logo" src="<?php echo esc_url( ACX_URI . '/assets/img/logo-ac.png' ); ?>" width="186" height="160" alt="" decoding="async" fetchpriority="high">
+					</picture>
+				<?php endif; ?>
+			</span>
+			<span class="brand__word"><span>ANTOINE</span> <span class="brand__codex">CODEX</span></span>
 		</a>
 
 		<nav class="primary-nav" aria-label="<?php esc_attr_e( 'Navigation principale', 'antoine-codex-immersive' ); ?>">
