@@ -1,0 +1,1348 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ANTOINE CODEX Immersive 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: antoine-codex-immersive\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:18
+msgid "Recherche : %s"
+msgstr "Search: %s"
+
+#: index.php:23
+msgid "Journal"
+msgstr "Journal"
+
+#: index.php:51
+msgid "Aucun contenu ne correspond à cette recherche."
+msgstr "No content matches this search."
+
+#: single.php:38 inc/template-tags.php:349
+msgid "Précédent"
+msgstr "Previous"
+
+#: single.php:39 inc/template-tags.php:350
+msgid "Suivant"
+msgstr "Next"
+
+#: footer.php:15 inc/blocks.php:44
+msgid "Prochaine étape"
+msgstr "Next step"
+
+#: footer.php:19 inc/blocks.php:57
+msgid "Nous contacter"
+msgstr "Contact us"
+
+#: footer.php:25
+msgid "Navigation"
+msgstr "Navigation"
+
+#: footer.php:39 page-templates/template-services.php:15 page-templates/template-services.php:17 inc/setup.php:146
+msgid "Expertises"
+msgstr "Expertise"
+
+#: footer.php:47 page-templates/template-contact.php:17 inc/customizer.php:244 inc/setup.php:150
+msgid "Contact"
+msgstr "Contact"
+
+#: footer.php:50
+msgid "Page contact"
+msgstr "Contact page"
+
+#: footer.php:73 footer.php:79 inc/setup.php:41
+msgid "Liens légaux"
+msgstr "Legal links"
+
+#: footer.php:83
+msgid "Haut de page"
+msgstr "Back to top"
+
+#: 404.php:14
+msgid "Cette page n’existe pas — ou plus."
+msgstr "This page does not exist — or no longer does."
+
+#: 404.php:15
+msgid "Le lien est peut-être ancien. Voici quelques points de départ."
+msgstr "The link may be out of date. Here are a few starting points."
+
+#: 404.php:23
+msgid "Retour à l’accueil"
+msgstr "Back to home"
+
+#: 404.php:24 page-templates/template-contact.php:40
+msgid "Diagnostic d’entreprise"
+msgstr "Business diagnostic"
+
+#: page.php:23
+msgid "Pages"
+msgstr "Pages"
+
+#: searchform.php:13
+msgid "Rechercher"
+msgstr "Search"
+
+#: searchform.php:14
+msgid "Rechercher…"
+msgstr "Search…"
+
+#: searchform.php:15
+msgid "Lancer la recherche"
+msgstr "Search"
+
+#: comments.php:19
+msgid "%s commentaire"
+msgid_plural "%s commentaires"
+msgstr[0] "%s comment"
+msgstr[1] "%s comments"
+
+#: header.php:38 inc/setup.php:39
+msgid "Navigation principale"
+msgstr "Main navigation"
+
+#: header.php:55 page-templates/template-diagnostic.php:20 inc/setup.php:148 inc/helpers.php:44
+msgid "Diagnostic"
+msgstr "Diagnostic"
+
+#: header.php:58
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:60 inc/enqueue.php:45
+msgid "Ouvrir le menu"
+msgstr "Open menu"
+
+#: header.php:69
+msgid "Navigation mobile"
+msgstr "Mobile navigation"
+
+#: header.php:83 inc/helpers.php:30 inc/blocks.php:54
+msgid "Lancer le diagnostic"
+msgstr "Start the diagnostic"
+
+#: page-templates/template-diagnostic.php:27
+msgid "Choisir une démarche"
+msgstr "Choose an approach"
+
+#: page-templates/template-contact.php:27
+msgid "Coordonnées"
+msgstr "Contact details"
+
+#: page-templates/template-contact.php:34 inc/template-tags.php:201
+msgid "Quelques minutes"
+msgstr "A few minutes"
+
+#: page-templates/template-contact.php:35 inc/template-tags.php:202 inc/admin.php:497 inc/core-bridge.php:262
+msgid "Quick Diagnostic"
+msgstr "Quick Diagnostic"
+
+#: page-templates/template-contact.php:39 inc/template-tags.php:209
+msgid "Analyse approfondie"
+msgstr "In-depth analysis"
+
+#: page-templates/template-contact.php:45 inc/template-tags.php:224
+msgid "Conversation IA"
+msgstr "AI conversation"
+
+#: page-templates/template-fondateur.php:20 inc/customizer.php:243 inc/setup.php:149 inc/helpers.php:66
+msgid "Fondateur"
+msgstr "Founder"
+
+#: page-templates/template-methodologie.php:15 inc/setup.php:147 inc/helpers.php:49 inc/blocks.php:70
+msgid "Méthode"
+msgstr "Method"
+
+#: template-parts/content-card.php:22
+msgid "Lire"
+msgstr "Read"
+
+#: template-parts/front/territory.php:11 inc/helpers.php:62
+msgid "Hôtels indépendants"
+msgstr "Independent hotels"
+
+#: template-parts/front/territory.php:12
+msgid "PME & commerces"
+msgstr "SMEs & retail"
+
+#: template-parts/front/territory.php:13
+msgid "Professions libérales"
+msgstr "Independent professionals"
+
+#: template-parts/front/territory.php:14
+msgid "Entrepreneurs & créateurs"
+msgstr "Entrepreneurs & founders"
+
+#: template-parts/front/territory.php:47
+msgid "Focus"
+msgstr "Focus"
+
+#: template-parts/front/hero.php:41
+msgid "Défiler pour révéler la structure"
+msgstr "Scroll to reveal the structure"
+
+#: template-parts/front/method.php:25
+msgid "Lire la méthodologie"
+msgstr "Read the methodology"
+
+#: inc/customizer.php:114
+msgid "ANTOINE CODEX — Thème"
+msgstr "ANTOINE CODEX — Theme"
+
+#: inc/customizer.php:115
+msgid "Textes de la page d’accueil, pages clés, coordonnées et effets visuels. Laissez un champ vide pour revenir au texte par défaut."
+msgstr "Home page texts, key pages, contact details and visual effects. Leave a field empty to restore the default text."
+
+#: inc/customizer.php:121
+msgid "Accueil — Ouverture"
+msgstr "Home — Opening"
+
+#: inc/customizer.php:122
+msgid "Surtitre"
+msgstr "Eyebrow"
+
+#: inc/customizer.php:123
+msgid "Titre (une phrase par ligne séparée par un point)"
+msgstr "Title (each sentence ending with a full stop goes on its own line)"
+
+#: inc/customizer.php:124
+msgid "Positionnement"
+msgstr "Positioning"
+
+#: inc/customizer.php:125
+msgid "Bouton principal (vers le diagnostic)"
+msgstr "Primary button (to the diagnostic)"
+
+#: inc/customizer.php:126
+msgid "Bouton secondaire"
+msgstr "Secondary button"
+
+#: inc/customizer.php:127
+msgid "Lien du bouton secondaire (vide = page Services)"
+msgstr "Secondary button link (empty = Services page)"
+
+#: inc/customizer.php:132
+msgid "Contenu de la page d’accueil statique"
+msgstr "Static home page content"
+
+#: inc/customizer.php:136
+msgid "Sections immersives du thème"
+msgstr "Theme immersive sections"
+
+#: inc/customizer.php:137
+msgid "Sections immersives + contenu de la page"
+msgstr "Immersive sections + page content"
+
+#: inc/customizer.php:138
+msgid "Ouverture immersive + contenu de la page uniquement"
+msgstr "Immersive opening + page content only"
+
+#: inc/customizer.php:140
+msgid "Le contenu existant de votre page d’accueil n’est jamais supprimé : choisissez s’il est affiché."
+msgstr "Your home page's existing content is never deleted: choose whether it is displayed."
+
+#: inc/customizer.php:145
+msgid "Accueil — Sections"
+msgstr "Home — Sections"
+
+#: inc/customizer.php:147
+msgid "Approche — étiquette"
+msgstr "Approach — label"
+
+#: inc/customizer.php:148
+msgid "Approche — texte"
+msgstr "Approach — text"
+
+#: inc/customizer.php:149
+msgid "Expertises — étiquette"
+msgstr "Expertise — label"
+
+#: inc/customizer.php:150
+msgid "Expertises — titre"
+msgstr "Expertise — title"
+
+#: inc/customizer.php:151
+msgid "Expertises — introduction"
+msgstr "Expertise — introduction"
+
+#: inc/customizer.php:152
+msgid "Diagnostic — étiquette"
+msgstr "Diagnostic — label"
+
+#: inc/customizer.php:153
+msgid "Diagnostic — titre"
+msgstr "Diagnostic — title"
+
+#: inc/customizer.php:154
+msgid "Diagnostic — introduction"
+msgstr "Diagnostic — introduction"
+
+#: inc/customizer.php:155
+msgid "Méthode — étiquette"
+msgstr "Method — label"
+
+#: inc/customizer.php:156
+msgid "Méthode — titre"
+msgstr "Method — title"
+
+#: inc/customizer.php:157
+msgid "Étape 1 — titre"
+msgstr "Step 1 — title"
+
+#: inc/customizer.php:158
+msgid "Étape 1 — texte"
+msgstr "Step 1 — text"
+
+#: inc/customizer.php:159
+msgid "Étape 2 — titre"
+msgstr "Step 2 — title"
+
+#: inc/customizer.php:160
+msgid "Étape 2 — texte"
+msgstr "Step 2 — text"
+
+#: inc/customizer.php:161
+msgid "Étape 3 — titre"
+msgstr "Step 3 — title"
+
+#: inc/customizer.php:162
+msgid "Étape 3 — texte"
+msgstr "Step 3 — text"
+
+#: inc/customizer.php:163
+msgid "Territoire — étiquette"
+msgstr "Territory — label"
+
+#: inc/customizer.php:164
+msgid "Territoire — titre"
+msgstr "Territory — title"
+
+#: inc/customizer.php:165
+msgid "Territoire — texte"
+msgstr "Territory — text"
+
+#: inc/customizer.php:166
+msgid "Hôtels indépendants — titre"
+msgstr "Independent hotels — title"
+
+#: inc/customizer.php:167
+msgid "Hôtels indépendants — texte"
+msgstr "Independent hotels — text"
+
+#: inc/customizer.php:168
+msgid "Fondateur — étiquette"
+msgstr "Founder — label"
+
+#: inc/customizer.php:169
+msgid "Fondateur — titre"
+msgstr "Founder — title"
+
+#: inc/customizer.php:170
+msgid "Fondateur — texte (vide = extrait de la page Fondateur)"
+msgstr "Founder — text (empty = excerpt of the Founder page)"
+
+#: inc/customizer.php:171
+msgid "Fondateur — bouton"
+msgstr "Founder — button"
+
+#: inc/customizer.php:172
+msgid "Appel final — titre"
+msgstr "Final call to action — title"
+
+#: inc/customizer.php:173
+msgid "Appel final — texte"
+msgstr "Final call to action — text"
+
+#: inc/customizer.php:191
+msgid "Fondateur — portrait (vide = image mise en avant de la page Fondateur)"
+msgstr "Founder — portrait (empty = featured image of the Founder page)"
+
+#: inc/customizer.php:202
+msgid "Expertises (6 cartes)"
+msgstr "Expertise (6 cards)"
+
+#: inc/customizer.php:204
+msgid "Laissez vide pour conserver le texte par défaut. Points clés : un par ligne."
+msgstr "Leave empty to keep the default text. Key points: one per line."
+
+#: inc/customizer.php:209
+msgid "titre"
+msgstr "title"
+
+#: inc/customizer.php:209
+msgid "texte"
+msgstr "text"
+
+#: inc/customizer.php:209
+msgid "points clés"
+msgstr "key points"
+
+#: inc/customizer.php:209
+msgid "lien"
+msgstr "link"
+
+#: inc/customizer.php:221
+msgid "%1$s — %2$s"
+msgstr "%1$s — %2$s"
+
+#: inc/customizer.php:234
+msgid "Pages clés"
+msgstr "Key pages"
+
+#: inc/customizer.php:236
+msgid "Par défaut, le thème détecte vos pages existantes par leur adresse ou leur titre. Choisissez-les ici pour être certain des liens. La page choisie reçoit automatiquement la mise en page immersive correspondante (sauf si un gabarit est déjà sélectionné dans l’éditeur)."
+msgstr "By default the theme detects your existing pages by their address or title. Select them here to be sure of the links. The selected page automatically receives the matching immersive layout (unless a template is already selected in the editor)."
+
+#: inc/customizer.php:240 inc/template-tags.php:210 inc/admin.php:492
+msgid "Diagnostic d’entreprise & Stratégie de croissance"
+msgstr "Business Diagnostic & Growth Strategy"
+
+#: inc/customizer.php:241
+msgid "Services / Expertises"
+msgstr "Services / Expertise"
+
+#: inc/customizer.php:242 inc/admin.php:494
+msgid "Méthodologie"
+msgstr "Methodology"
+
+#: inc/customizer.php:253
+msgid "Lien du Quick Diagnostic"
+msgstr "Quick Diagnostic link"
+
+#: inc/customizer.php:255
+msgid "URL complète ou ancre (ex. #quick-diagnostic). Vide = détection automatique, sinon section Diagnostic."
+msgstr "Full URL or anchor (e.g. #quick-diagnostic). Empty = automatic detection, otherwise the Diagnostic section."
+
+#: inc/customizer.php:262
+msgid "Coordonnées & réseaux"
+msgstr "Contact details & social networks"
+
+#: inc/customizer.php:264
+msgid "Les champs vides ne sont pas affichés."
+msgstr "Empty fields are not displayed."
+
+#: inc/customizer.php:267 inc/forms.php:112 inc/forms.php:227
+msgid "E-mail"
+msgstr "Email"
+
+#: inc/customizer.php:268 inc/forms.php:116 inc/forms.php:228
+msgid "Téléphone"
+msgstr "Phone"
+
+#: inc/customizer.php:269
+msgid "Adresse / zone"
+msgstr "Address / area"
+
+#: inc/customizer.php:270
+msgid "Disponibilités"
+msgstr "Availability"
+
+#: inc/customizer.php:278
+msgid "Afficher le formulaire de contact du thème sur la page Contact"
+msgstr "Show the theme contact form on the Contact page"
+
+#: inc/customizer.php:280
+msgid "Solution de secours. Laissez décoché si votre page Contact contient déjà un formulaire (Contact Form 7, WPForms, etc.). Également disponible via le code court [acx_contact_form]."
+msgstr "Fallback solution. Leave unchecked if your Contact page already contains a form (Contact Form 7, WPForms, etc.). Also available through the [acx_contact_form] shortcode."
+
+#: inc/customizer.php:287
+msgid "Effets visuels"
+msgstr "Visual effects"
+
+#: inc/customizer.php:289
+msgid "Les effets sont automatiquement désactivés pour les visiteurs qui ont demandé la réduction des animations, et allégés sur les appareils modestes."
+msgstr "Effects are automatically disabled for visitors who asked for reduced motion, and lightened on modest devices."
+
+#: inc/customizer.php:292
+msgid "Champ de particules 3D (WebGL)"
+msgstr "3D particle field (WebGL)"
+
+#: inc/customizer.php:297
+msgid "Densité des particules"
+msgstr "Particle density"
+
+#: inc/customizer.php:301
+msgid "Automatique (selon l’appareil)"
+msgstr "Automatic (depending on the device)"
+
+#: inc/customizer.php:302
+msgid "Légère"
+msgstr "Light"
+
+#: inc/customizer.php:303
+msgid "Élevée"
+msgstr "High"
+
+#: inc/customizer.php:307
+msgid "Effets au survol (lumière, inclinaison des cartes)"
+msgstr "Hover effects (light, card tilt)"
+
+#: inc/enqueue.php:46
+msgid "Fermer le menu"
+msgstr "Close menu"
+
+#: inc/setup.php:40 inc/setup.php:66
+msgid "Pied de page"
+msgstr "Footer"
+
+#: inc/setup.php:68
+msgid "Widgets affichés au-dessus des mentions du pied de page."
+msgstr "Widgets displayed above the footer notices."
+
+#: inc/setup.php:192
+msgid "Aller au contenu"
+msgstr "Skip to content"
+
+#: inc/multilingual.php:150
+msgid "Choix de la langue"
+msgstr "Language selection"
+
+#: inc/helpers.php:27
+msgid "Conseil stratégique & technologique — Nice · Côte d’Azur"
+msgstr "Strategy & technology consulting — Nice · French Riviera"
+
+#: inc/helpers.php:28
+msgid "Comprendre. Décider. Transformer."
+msgstr "Understand. Decide. Transform."
+
+#: inc/helpers.php:29
+msgid "Diagnostic d’entreprise, stratégie de croissance, automatisations IA et présence digitale pour les dirigeants de la Côte d’Azur — des PME aux hôtels indépendants."
+msgstr "Business diagnostics, growth strategy, AI automation and digital presence for business leaders on the French Riviera — from SMEs to independent hotels."
+
+#: inc/helpers.php:31
+msgid "Découvrir les expertises"
+msgstr "Explore our expertise"
+
+#: inc/helpers.php:35
+msgid "Approche"
+msgstr "Approach"
+
+#: inc/helpers.php:36
+msgid "Chaque entreprise possède une structure invisible : ses flux, ses décisions, ses signaux faibles. Nous la rendons lisible, puis nous l’aidons à évoluer — avec méthode, technologie et exigence."
+msgstr "Every business has an invisible structure: its flows, its decisions, its weak signals. We make it readable, then help it evolve — with method, technology and rigour."
+
+#: inc/helpers.php:40
+msgid "Six leviers, une seule lecture de votre entreprise."
+msgstr "Six levers, one reading of your business."
+
+#: inc/helpers.php:41
+msgid "Chaque accompagnement part du même principe : comprendre avant d’agir. Les expertises se combinent selon vos priorités."
+msgstr "Every engagement starts from the same principle: understand before acting. Our areas of expertise combine according to your priorities."
+
+#: inc/helpers.php:45
+msgid "Commencer par une lecture juste de votre entreprise."
+msgstr "Start with an accurate reading of your business."
+
+#: inc/helpers.php:46
+msgid "Trois portes d’entrée, trois niveaux de profondeur. Choisissez celle qui correspond à votre besoin du moment."
+msgstr "Three entry points, three levels of depth. Choose the one that fits your current need."
+
+#: inc/helpers.php:50
+msgid "Une méthode en trois temps."
+msgstr "A three-step method."
+
+#: inc/helpers.php:51 inc/blocks.php:74
+msgid "Comprendre"
+msgstr "Understand"
+
+#: inc/helpers.php:52
+msgid "Observer l’entreprise telle qu’elle fonctionne réellement : chiffres, processus, clients, équipe, présence en ligne. Écouter avant de conclure."
+msgstr "Observe the business as it really works: figures, processes, customers, team, online presence. Listen before concluding."
+
+#: inc/helpers.php:53 inc/blocks.php:77
+msgid "Décider"
+msgstr "Decide"
+
+#: inc/helpers.php:54
+msgid "Hiérarchiser les priorités. Chaque recommandation est reliée à un enjeu concret, avec ses moyens, son calendrier et ses risques."
+msgstr "Rank the priorities. Every recommendation is tied to a concrete issue, with its resources, timeline and risks."
+
+#: inc/helpers.php:55 inc/blocks.php:80
+msgid "Transformer"
+msgstr "Transform"
+
+#: inc/helpers.php:56
+msgid "Mettre en œuvre, étape par étape : stratégie, automatisations, marketing, site web, image. Puis mesurer, apprendre et ajuster."
+msgstr "Implement, step by step: strategy, automation, marketing, website, imagery. Then measure, learn and adjust."
+
+#: inc/helpers.php:59
+msgid "Territoire"
+msgstr "Territory"
+
+#: inc/helpers.php:60
+msgid "Ancré à Nice. Au service de la Côte d’Azur."
+msgstr "Rooted in Nice. Serving the French Riviera."
+
+#: inc/helpers.php:61
+msgid "Une connaissance directe du tissu économique local : saisonnalité, clientèle internationale, concurrence des plateformes, exigence de qualité. Les accompagnements se font sur place ou à distance."
+msgstr "First-hand knowledge of the local economy: seasonality, international clientele, competition from platforms, high quality standards. Support is provided on site or remotely."
+
+#: inc/helpers.php:63
+msgid "Visibilité, réservation directe, automatisation des échanges avec les clients, images qui donnent envie de venir : une approche globale pour les établissements qui veulent rester indépendants."
+msgstr "Visibility, direct booking, automated guest communication, imagery that makes people want to come: a comprehensive approach for properties that want to stay independent."
+
+#: inc/helpers.php:67
+msgid "Une approche personnelle, à la croisée de la stratégie, de la technologie et de l’image."
+msgstr "A personal approach, at the crossroads of strategy, technology and imagery."
+
+#: inc/helpers.php:69
+msgid "Découvrir le fondateur"
+msgstr "Meet the founder"
+
+#: inc/helpers.php:73 inc/blocks.php:47
+msgid "Commençons par comprendre."
+msgstr "Let's start by understanding."
+
+#: inc/helpers.php:74 inc/blocks.php:50
+msgid "Le diagnostic est le point de départ de chaque accompagnement."
+msgstr "The diagnostic is the starting point of every engagement."
+
+#: inc/helpers.php:182
+msgid "Diagnostic d’entreprise & stratégie de croissance"
+msgstr "Business diagnostic & growth strategy"
+
+#: inc/helpers.php:183
+msgid "Une lecture complète de votre activité : modèle économique, organisation, offre, parcours client et présence digitale. Vous repartez avec des priorités claires et une feuille de route réaliste."
+msgstr "A complete reading of your business: business model, organisation, offer, customer journey and digital presence. You leave with clear priorities and a realistic roadmap."
+
+#: inc/helpers.php:184
+msgid "Analyse de l’existant\nPriorités hiérarchisées\nFeuille de route de croissance"
+msgstr "Analysis of the current situation\nRanked priorities\nGrowth roadmap"
+
+#: inc/helpers.php:187
+msgid "Automatisations IA"
+msgstr "AI automation"
+
+#: inc/helpers.php:188
+msgid "Repérer les tâches répétitives qui freinent votre équipe, puis concevoir des automatisations et des assistants IA utiles, sécurisés et reliés à vos outils."
+msgstr "Identify the repetitive tasks that slow your team down, then design useful, secure AI automations and assistants connected to your tools."
+
+#: inc/helpers.php:189
+msgid "Cartographie des processus\nAssistants et agents IA\nIntégration à vos outils"
+msgstr "Process mapping\nAI assistants and agents\nIntegration with your tools"
+
+#: inc/helpers.php:192
+msgid "Marketing & SEO"
+msgstr "Marketing & SEO"
+
+#: inc/helpers.php:193
+msgid "Clarifier votre message, être trouvé par les bonnes personnes et construire une acquisition durable, locale comme internationale."
+msgstr "Clarify your message, be found by the right people and build lasting acquisition, locally and internationally."
+
+#: inc/helpers.php:194
+msgid "Positionnement et message\nRéférencement naturel et local\nContenus et campagnes"
+msgstr "Positioning and messaging\nOrganic and local SEO\nContent and campaigns"
+
+#: inc/helpers.php:197
+msgid "Sites web"
+msgstr "Websites"
+
+#: inc/helpers.php:198
+msgid "Des sites rapides, élégants et pensés pour convertir : site vitrine, réservation directe, génération de demandes qualifiées."
+msgstr "Fast, elegant websites designed to convert: showcase sites, direct booking, qualified lead generation."
+
+#: inc/helpers.php:199
+msgid "Conception et développement\nPerformance et accessibilité\nParcours de conversion"
+msgstr "Design and development\nPerformance and accessibility\nConversion journeys"
+
+#: inc/helpers.php:202
+msgid "Photographie, vidéo & drone corporate"
+msgstr "Corporate photography, video & drone"
+
+#: inc/helpers.php:203
+msgid "Des images qui traduisent la qualité réelle de votre entreprise : équipes, lieux, savoir-faire et paysages de la Riviera, vus du sol comme du ciel."
+msgstr "Images that convey the real quality of your business: teams, places, know-how and Riviera landscapes, seen from the ground and from the sky."
+
+#: inc/helpers.php:204
+msgid "Photographie corporate\nVidéo de marque\nPrises de vue par drone"
+msgstr "Corporate photography\nBrand video\nDrone footage"
+
+#: inc/helpers.php:207
+msgid "Mentorat d’entrepreneurs"
+msgstr "Mentoring for entrepreneurs"
+
+#: inc/helpers.php:208
+msgid "Un accompagnement individuel pour prendre du recul, structurer vos décisions et avancer avec méthode, du lancement au développement."
+msgstr "One-to-one support to step back, structure your decisions and move forward methodically, from launch to growth."
+
+#: inc/helpers.php:209
+msgid "Séances individuelles\nStructuration des décisions\nSuivi dans la durée"
+msgstr "One-to-one sessions\nStructured decision-making\nLong-term follow-up"
+
+#: inc/template-tags.php:121 inc/template-tags.php:143
+msgid "Fil d’Ariane"
+msgstr "Breadcrumb"
+
+#: inc/template-tags.php:203
+msgid "Un questionnaire court pour une première lecture de votre situation et des pistes prioritaires."
+msgstr "A short questionnaire for a first reading of your situation and priority leads."
+
+#: inc/template-tags.php:204
+msgid "Questionnaire · résultat immédiat"
+msgstr "Questionnaire · instant result"
+
+#: inc/template-tags.php:205
+msgid "Faire le Quick Diagnostic"
+msgstr "Take the Quick Diagnostic"
+
+#: inc/template-tags.php:211
+msgid "Entretiens, données, organisation, offre et marché : une analyse complète pour construire une stratégie de croissance argumentée et une feuille de route."
+msgstr "Interviews, data, organisation, offer and market: a complete analysis to build a well-argued growth strategy and a roadmap."
+
+#: inc/template-tags.php:212
+msgid "Accompagnement · feuille de route"
+msgstr "Consulting · roadmap"
+
+#: inc/template-tags.php:215
+msgid "Voir le détail"
+msgstr "See the details"
+
+#: inc/template-tags.php:217
+msgid "Découvrir le diagnostic complet"
+msgstr "Discover the full diagnostic"
+
+#: inc/template-tags.php:226
+msgid "Posez vos questions librement à notre assistant IA : il vous répond et vous oriente vers la démarche adaptée. Une conversation, pas un questionnaire."
+msgstr "Ask our AI assistant anything: it answers and points you to the right approach. A conversation, not a questionnaire."
+
+#: inc/template-tags.php:227
+msgid "Échange libre · assistant IA"
+msgstr "Open conversation · AI assistant"
+
+#: inc/template-tags.php:229
+msgid "Ouvrir la conversation"
+msgstr "Open the conversation"
+
+#: inc/template-tags.php:306
+msgid "(nouvel onglet)"
+msgstr "(new tab)"
+
+#: inc/blocks.php:18
+msgid "Panneau ANTOINE CODEX"
+msgstr "ANTOINE CODEX panel"
+
+#: inc/blocks.php:19
+msgid "Section claire"
+msgstr "Light section"
+
+#: inc/blocks.php:20 inc/blocks.php:21
+msgid "Étiquette monospace"
+msgstr "Monospace label"
+
+#: inc/blocks.php:22
+msgid "Chapeau"
+msgstr "Lead paragraph"
+
+#: inc/blocks.php:23
+msgid "Contour"
+msgstr "Outline"
+
+#: inc/blocks.php:24
+msgid "Étapes numérotées"
+msgstr "Numbered steps"
+
+#: inc/blocks.php:40
+msgid "Appel à l’action — diagnostic"
+msgstr "Call to action — diagnostic"
+
+#: inc/blocks.php:67
+msgid "Méthode en trois étapes"
+msgstr "Three-step method"
+
+#: inc/blocks.php:89
+msgid "Section claire avec titre"
+msgstr "Light section with title"
+
+#: inc/blocks.php:93
+msgid "Étiquette"
+msgstr "Label"
+
+#: inc/blocks.php:96
+msgid "Titre de la section"
+msgstr "Section title"
+
+#: inc/admin.php:15 inc/admin.php:16
+msgid "ANTOINE CODEX CORE"
+msgstr "ANTOINE CODEX CORE"
+
+#: inc/admin.php:22 inc/admin.php:23 inc/admin.php:501
+msgid "Diagnostic de migration"
+msgstr "Migration check"
+
+#: inc/admin.php:103
+msgid "ANTOINE CODEX CORE — connexion"
+msgstr "ANTOINE CODEX CORE — connection"
+
+#: inc/admin.php:104
+msgid "Le thème affiche le bouton et le panneau de conversation. Les réponses proviennent exclusivement de votre ANTOINE CODEX CORE : aucun assistant de démonstration n’est intégré."
+msgstr "The theme displays the button and the conversation panel. Answers come exclusively from your ANTOINE CODEX CORE: no demo assistant is built in."
+
+#: inc/admin.php:108
+msgid "État :"
+msgstr "Status:"
+
+#: inc/admin.php:111
+msgid "désactivé — aucun bouton affiché."
+msgstr "disabled — no button displayed."
+
+#: inc/admin.php:113
+msgid "configuré — le bouton est visible par les visiteurs. Utilisez « Tester la connexion » pour vérifier une vraie réponse."
+msgstr "configured — the button is visible to visitors. Use “Test the connection” to check a real answer."
+
+#: inc/admin.php:115
+msgid "configuration incomplète — le panneau n’est visible que par les administrateurs."
+msgstr "incomplete configuration — the panel is only visible to administrators."
+
+#: inc/admin.php:125
+msgid "Mode d’intégration"
+msgstr "Integration mode"
+
+#: inc/admin.php:128
+msgid "(défini dans wp-config.php)"
+msgstr "(defined in wp-config.php)"
+
+#: inc/admin.php:133
+msgid "Désactivé"
+msgstr "Disabled"
+
+#: inc/admin.php:134
+msgid "Passerelle HTTP — WordPress relaie les messages vers l’API de CORE (clé gardée côté serveur)"
+msgstr "HTTP gateway — WordPress relays messages to the CORE API (key kept server-side)"
+
+#: inc/admin.php:135
+msgid "Extension PHP — CORE est une extension WordPress qui répond via le filtre antoine_codex_core_reply"
+msgstr "PHP plugin — CORE is a WordPress plugin that answers through the antoine_codex_core_reply filter"
+
+#: inc/admin.php:136
+msgid "Widget existant — CORE a déjà son propre script ; le thème ouvre ce widget"
+msgstr "Existing widget — CORE already has its own script; the theme opens that widget"
+
+#: inc/admin.php:145
+msgid "Passerelle HTTP"
+msgstr "HTTP gateway"
+
+#: inc/admin.php:147
+msgid "URL de l’API CORE"
+msgstr "CORE API URL"
+
+#: inc/admin.php:150
+msgid "Défini dans wp-config.php (ACX_CORE_ENDPOINT)."
+msgstr "Defined in wp-config.php (ACX_CORE_ENDPOINT)."
+
+#: inc/admin.php:154
+msgid "Adresse appelée par le serveur WordPress (jamais par le navigateur). Elle doit être joignable depuis votre hébergeur : une adresse locale (localhost, 192.168.x.x) ne fonctionne que si CORE tourne sur le même serveur ; sinon utilisez un tunnel sécurisé (Cloudflare Tunnel, Tailscale…)."
+msgstr "Address called by the WordPress server (never by the browser). It must be reachable from your host: a local address (localhost, 192.168.x.x) only works if CORE runs on the same server; otherwise use a secure tunnel (Cloudflare Tunnel, Tailscale…)."
+
+#: inc/admin.php:158
+msgid "Format de l’API"
+msgstr "API format"
+
+#: inc/admin.php:161
+msgid "Générique JSON : { message, session_id, history, context } → { reply }"
+msgstr "Generic JSON: { message, session_id, history, context } → { reply }"
+
+#: inc/admin.php:162
+msgid "Compatible OpenAI : /v1/chat/completions (Ollama, LM Studio, vLLM…)"
+msgstr "OpenAI-compatible: /v1/chat/completions (Ollama, LM Studio, vLLM…)"
+
+#: inc/admin.php:167
+msgid "Modèle (format OpenAI)"
+msgstr "Model (OpenAI format)"
+
+#: inc/admin.php:171
+msgid "Clé d’API"
+msgstr "API key"
+
+#: inc/admin.php:174
+msgid "Définie dans wp-config.php (ACX_CORE_TOKEN) — recommandé."
+msgstr "Defined in wp-config.php (ACX_CORE_TOKEN) — recommended."
+
+#: inc/admin.php:176
+msgid "•••••••• (enregistrée — laisser vide pour conserver)"
+msgstr "•••••••• (saved — leave empty to keep)"
+
+#: inc/admin.php:178
+msgid "Effacer la clé enregistrée"
+msgstr "Delete the saved key"
+
+#: inc/admin.php:180
+msgid "Jamais envoyée au navigateur. Pour plus de sécurité, préférez define( 'ACX_CORE_TOKEN', '…' ); dans wp-config.php."
+msgstr "Never sent to the browser. For better security, prefer define( 'ACX_CORE_TOKEN', '…' ); in wp-config.php."
+
+#: inc/admin.php:185
+msgid "En-tête d’authentification"
+msgstr "Authentication header"
+
+#: inc/admin.php:188
+msgid "« Authorization » envoie « Bearer <clé> ». Tout autre nom (ex. X-API-Key) envoie la clé brute."
+msgstr "“Authorization” sends “Bearer <key>”. Any other name (e.g. X-API-Key) sends the raw key."
+
+#: inc/admin.php:192
+msgid "Instructions système (facultatif)"
+msgstr "System instructions (optional)"
+
+#: inc/admin.php:195
+msgid "À renseigner uniquement si la personnalité et les règles de CORE ne sont pas déjà définies côté serveur CORE. Conservé côté serveur, jamais exposé."
+msgstr "Fill in only if CORE's personality and rules are not already defined on the CORE server. Kept server-side, never exposed."
+
+#: inc/admin.php:199
+msgid "Délai maximal (s)"
+msgstr "Maximum delay (s)"
+
+#: inc/admin.php:203
+msgid "Messages max. par visiteur / 10 min"
+msgstr "Max. messages per visitor / 10 min"
+
+#: inc/admin.php:206
+msgid "Widget existant"
+msgstr "Existing widget"
+
+#: inc/admin.php:208
+msgid "Fonction JavaScript d’ouverture"
+msgstr "JavaScript open function"
+
+#: inc/admin.php:211
+msgid "Nom de la fonction globale exposée par le widget CORE existant (appelée sans argument)."
+msgstr "Name of the global function exposed by the existing CORE widget (called without arguments)."
+
+#: inc/admin.php:215
+msgid "Ou : sélecteur du bouton existant"
+msgstr "Or: selector of the existing button"
+
+#: inc/admin.php:218
+msgid "Le thème clique sur cet élément pour ouvrir le widget, et le masque au profit de son propre bouton."
+msgstr "The theme clicks this element to open the widget, and hides it in favour of its own button."
+
+#: inc/admin.php:221
+msgid "Interface"
+msgstr "Interface"
+
+#: inc/admin.php:223
+msgid "Bouton flottant"
+msgstr "Floating button"
+
+#: inc/admin.php:224
+msgid "Afficher le bouton « ANTOINE CODEX CORE » sur toutes les pages"
+msgstr "Show the “ANTOINE CODEX CORE” button on every page"
+
+#: inc/admin.php:227
+msgid "Questions suggérées"
+msgstr "Suggested questions"
+
+#: inc/admin.php:230
+msgid "Une par ligne (4 maximum). Vide = suggestions par défaut."
+msgstr "One per line (4 maximum). Empty = default suggestions."
+
+#: inc/admin.php:237 inc/admin.php:239
+msgid "Tester la connexion"
+msgstr "Test the connection"
+
+#: inc/admin.php:238
+msgid "Envoie un vrai message de test à CORE depuis le serveur, avec les réglages enregistrés."
+msgstr "Sends a real test message to CORE from the server, using the saved settings."
+
+#: inc/admin.php:262
+msgid "API JavaScript du panneau"
+msgstr "Panel JavaScript API"
+
+#: inc/admin.php:263
+msgid "Pour relier votre Quick Diagnostic existant : à la fin du questionnaire, déclenchez l’événement suivant. Le panneau propose alors d’analyser le résultat avec CORE (résultat transmis dans context.diagnostic)."
+msgstr "To connect your existing Quick Diagnostic: at the end of the questionnaire, dispatch the following event. The panel then offers to analyse the result with CORE (result sent in context.diagnostic)."
+
+#: inc/admin.php:293
+msgid "Avant de publier, consultez le diagnostic de migration : il liste les fonctions de votre ancien thème (codes courts, routes API, gabarits) qui doivent être conservées."
+msgstr "Before publishing, open the migration check: it lists the features of your previous theme (shortcodes, API routes, templates) that must be preserved."
+
+#: inc/admin.php:294
+msgid "Ouvrir le diagnostic"
+msgstr "Open the migration check"
+
+#: inc/admin.php:493
+msgid "Services"
+msgstr "Services"
+
+#: inc/admin.php:502
+msgid "Ce rapport compare votre site à ce nouveau thème. Les fonctions fournies par des extensions continuent de fonctionner ; celles qui étaient codées dans l’ancien thème doivent être déplacées dans une extension (mu-plugin) avant la mise en ligne. Réalisez cette vérification sur une copie de préproduction."
+msgstr "This report compares your site with this new theme. Features provided by plugins keep working; those coded in the previous theme must be moved into a plugin (mu-plugin) before going live. Run this check on a staging copy."
+
+#: inc/admin.php:504
+msgid "Ancien thème"
+msgstr "Previous theme"
+
+#: inc/admin.php:507
+msgid "Thème à analyser :"
+msgstr "Theme to analyse:"
+
+#: inc/admin.php:514
+msgid "Analyser"
+msgstr "Analyse"
+
+#: inc/admin.php:517
+msgid "%d fichiers PHP/JS analysés"
+msgstr "%d PHP/JS files analysed"
+
+#: inc/admin.php:520
+msgid "Codes courts déclarés dans l’ancien thème (disparaissent avec le changement de thème)"
+msgstr "Shortcodes declared in the previous theme (they disappear when switching themes)"
+
+#: inc/admin.php:521
+msgid "Routes API REST déclarées dans l’ancien thème"
+msgstr "REST API routes declared in the previous theme"
+
+#: inc/admin.php:522
+msgid "Actions AJAX déclarées dans l’ancien thème"
+msgstr "AJAX actions declared in the previous theme"
+
+#: inc/admin.php:523
+msgid "Types de contenu déclarés dans l’ancien thème"
+msgstr "Post types declared in the previous theme"
+
+#: inc/admin.php:524
+msgid "Scripts chargés par l’ancien thème"
+msgstr "Scripts loaded by the previous theme"
+
+#: inc/admin.php:525
+msgid "Gabarits de page de l’ancien thème"
+msgstr "Page templates of the previous theme"
+
+#: inc/admin.php:540
+msgid "Mentions à vérifier (CORE, Quick Diagnostic, IA, multilingue)"
+msgstr "Mentions to check (CORE, Quick Diagnostic, AI, multilingual)"
+
+#: inc/admin.php:551
+msgid "Ancien thème introuvable (information disponible après un changement de thème, tant que l’ancien thème reste installé)."
+msgstr "Previous theme not found (available after a theme switch, as long as the previous theme stays installed)."
+
+#: inc/admin.php:554
+msgid "Contenu publié"
+msgstr "Published content"
+
+#: inc/admin.php:555
+msgid "Codes courts utilisés mais NON disponibles actuellement"
+msgstr "Shortcodes used but NOT currently available"
+
+#: inc/admin.php:557
+msgid "Ces codes courts s’affichent en texte brut : leur code provenait probablement de l’ancien thème ou d’une extension désactivée."
+msgstr "These shortcodes are displayed as raw text: their code probably came from the previous theme or from a deactivated plugin."
+
+#: inc/admin.php:568
+msgid "Aucun code court manquant."
+msgstr "No missing shortcode."
+
+#: inc/admin.php:571
+msgid "Codes courts utilisés et disponibles"
+msgstr "Shortcodes used and available"
+
+#: inc/admin.php:574
+msgid "Blocs non enregistrés"
+msgstr "Unregistered blocks"
+
+#: inc/admin.php:582
+msgid "Aucun bloc manquant."
+msgstr "No missing block."
+
+#: inc/admin.php:585
+msgid "Pages utilisant un gabarit de l’ancien thème"
+msgstr "Pages using a template of the previous theme"
+
+#: inc/admin.php:587
+msgid "Ces pages s’affichent désormais avec le gabarit standard (ou le gabarit immersif si ce sont des pages clés). Vérifiez que rien n’était codé en dur dans l’ancien gabarit."
+msgstr "These pages now use the standard template (or the immersive one for key pages). Check that nothing was hard-coded in the old template."
+
+#: inc/admin.php:597
+msgid "Pages clés détectées"
+msgstr "Detected key pages"
+
+#: inc/admin.php:609
+msgid "non trouvée — à choisir dans Apparence → Personnaliser → ANTOINE CODEX → Pages clés"
+msgstr "not found — select it in Appearance → Customize → ANTOINE CODEX → Key pages"
+
+#: inc/admin.php:621
+msgid "Votre page d’accueil statique contient %d caractères de contenu, actuellement non affichés (mode « Sections immersives »). Ils ne sont pas supprimés. Pour les afficher : Personnaliser → ANTOINE CODEX → Accueil — Ouverture."
+msgstr "Your static home page contains %d characters of content, currently not displayed (“Immersive sections” mode). They are not deleted. To display them: Customize → ANTOINE CODEX → Home — Opening."
+
+#: inc/admin.php:629
+msgid "Extensions actives"
+msgstr "Active plugins"
+
+#: inc/admin.php:645
+msgid "SEO :"
+msgstr "SEO:"
+
+#: inc/admin.php:646
+msgid "extension détectée — le thème n’ajoute aucune métadonnée."
+msgstr "plugin detected — the theme adds no metadata."
+
+#: inc/admin.php:646
+msgid "aucune extension détectée — le thème ajoute description, Open Graph et données structurées de base."
+msgstr "no plugin detected — the theme adds a description, Open Graph and basic structured data."
+
+#: inc/admin.php:648
+msgid "Langues :"
+msgstr "Languages:"
+
+#: inc/admin.php:651
+msgid "aucune extension multilingue détectée — pas de sélecteur FR/EN."
+msgstr "no multilingual plugin detected — no FR/EN switcher."
+
+#: inc/admin.php:654
+msgid "ANTOINE CODEX CORE :"
+msgstr "ANTOINE CODEX CORE:"
+
+#: inc/admin.php:655
+msgid "configuré"
+msgstr "configured"
+
+#: inc/admin.php:655
+msgid "non relié"
+msgstr "not connected"
+
+#: inc/admin.php:658
+msgid "Emplacements de menus"
+msgstr "Menu locations"
+
+#: inc/admin.php:662
+msgid "aucun menu (menu automatique des pages clés)"
+msgstr "no menu (automatic menu of key pages)"
+
+#: inc/admin.php:665
+msgid "Gérer les emplacements"
+msgstr "Manage locations"
+
+#: inc/core-bridge.php:139
+msgid "Par où commencer pour mon entreprise ?"
+msgstr "Where should my business start?"
+
+#: inc/core-bridge.php:140
+msgid "Quelle différence entre le Quick Diagnostic et le diagnostic complet ?"
+msgstr "What is the difference between the Quick Diagnostic and the full diagnostic?"
+
+#: inc/core-bridge.php:141
+msgid "Comment l’IA peut-elle faire gagner du temps à mon équipe ?"
+msgstr "How can AI save my team time?"
+
+#: inc/core-bridge.php:179
+msgid "Vous"
+msgstr "You"
+
+#: inc/core-bridge.php:181
+msgid "CORE analyse votre message…"
+msgstr "CORE is analysing your message…"
+
+#: inc/core-bridge.php:182
+msgid "ANTOINE CODEX CORE n’a pas pu répondre. Vérifiez votre connexion puis réessayez."
+msgstr "ANTOINE CODEX CORE could not answer. Check your connection and try again."
+
+#: inc/core-bridge.php:183
+msgid "Trop de messages en peu de temps. Merci de patienter quelques minutes."
+msgstr "Too many messages in a short time. Please wait a few minutes."
+
+#: inc/core-bridge.php:184
+msgid "ANTOINE CODEX CORE est momentanément indisponible. Vous pouvez utiliser le Quick Diagnostic ou nous contacter."
+msgstr "ANTOINE CODEX CORE is temporarily unavailable. You can use the Quick Diagnostic or contact us."
+
+#: inc/core-bridge.php:185
+msgid "La réponse prend plus de temps que prévu. Merci de réessayer."
+msgstr "The answer is taking longer than expected. Please try again."
+
+#: inc/core-bridge.php:186
+msgid "Vous semblez hors ligne. Le message sera à renvoyer une fois la connexion rétablie."
+msgstr "You seem to be offline. Please resend the message once the connection is back."
+
+#: inc/core-bridge.php:187
+msgid "Réessayer"
+msgstr "Try again"
+
+#: inc/core-bridge.php:188
+msgid "Message trop long."
+msgstr "Message too long."
+
+#: inc/core-bridge.php:189
+msgid "La conversation a été effacée."
+msgstr "The conversation has been cleared."
+
+#: inc/core-bridge.php:190
+msgid "Conversation ANTOINE CODEX CORE ouverte."
+msgstr "ANTOINE CODEX CORE conversation opened."
+
+#: inc/core-bridge.php:191
+msgid "Résultat du Quick Diagnostic reçu. Vous pouvez en discuter avec CORE."
+msgstr "Quick Diagnostic result received. You can discuss it with CORE."
+
+#: inc/core-bridge.php:192
+msgid "Analyser mon résultat avec CORE"
+msgstr "Analyse my result with CORE"
+
+#: inc/core-bridge.php:193
+msgid "Voici le résultat de mon Quick Diagnostic. Pouvez-vous m’aider à l’interpréter et à identifier les priorités ?"
+msgstr "Here is my Quick Diagnostic result. Can you help me interpret it and identify the priorities?"
+
+#: inc/core-bridge.php:194
+msgid "Le widget ANTOINE CODEX CORE existant est introuvable sur cette page."
+msgstr "The existing ANTOINE CODEX CORE widget cannot be found on this page."
+
+#: inc/core-bridge.php:217
+msgid "Assistant IA"
+msgstr "AI assistant"
+
+#: inc/core-bridge.php:230
+msgid "Assistant IA · conversation"
+msgstr "AI assistant · conversation"
+
+#: inc/core-bridge.php:235 inc/core-bridge.php:236
+msgid "Nouvelle conversation"
+msgstr "New conversation"
+
+#: inc/core-bridge.php:238
+msgid "Fermer"
+msgstr "Close"
+
+#: inc/core-bridge.php:239
+msgid "Fermer la conversation"
+msgstr "Close the conversation"
+
+#: inc/core-bridge.php:247
+msgid "Visible uniquement par les administrateurs : ANTOINE CODEX CORE n’est pas encore relié."
+msgstr "Visible to administrators only: ANTOINE CODEX CORE is not connected yet."
+
+#: inc/core-bridge.php:248
+msgid "Configurer la connexion"
+msgstr "Configure the connection"
+
+#: inc/core-bridge.php:254
+msgid "Posez une question sur votre entreprise, nos expertises ou la démarche de diagnostic. ANTOINE CODEX CORE vous répond et vous oriente."
+msgstr "Ask a question about your business, our expertise or the diagnostic process. ANTOINE CODEX CORE answers and guides you."
+
+#: inc/core-bridge.php:261
+msgid "Autre option"
+msgstr "Other option"
+
+#: inc/core-bridge.php:263
+msgid "Un questionnaire guidé de quelques minutes, avec un résultat structuré."
+msgstr "A guided questionnaire of a few minutes, with a structured result."
+
+#: inc/core-bridge.php:268
+msgid "Messages de la conversation"
+msgstr "Conversation messages"
+
+#: inc/core-bridge.php:272
+msgid "Votre message à ANTOINE CODEX CORE"
+msgstr "Your message to ANTOINE CODEX CORE"
+
+#: inc/core-bridge.php:273
+msgid "Écrivez votre message…"
+msgstr "Write your message…"
+
+#: inc/core-bridge.php:275
+msgid "Envoyer"
+msgstr "Send"
+
+#: inc/core-bridge.php:278
+msgid "Entrée pour envoyer · Maj+Entrée pour aller à la ligne"
+msgstr "Enter to send · Shift+Enter for a new line"
+
+#: inc/core-bridge.php:282
+msgid "Réponses générées par IA, à vérifier. Évitez de partager des données sensibles."
+msgstr "AI-generated answers, to be checked. Avoid sharing sensitive data."
+
+#: inc/core-bridge.php:284
+msgid "Confidentialité"
+msgstr "Privacy"
+
+#: inc/core-bridge.php:375
+msgid "ANTOINE CODEX CORE n’est pas relié."
+msgstr "ANTOINE CODEX CORE is not connected."
+
+#: inc/core-bridge.php:378
+msgid "Origine non autorisée."
+msgstr "Origin not allowed."
+
+#: inc/core-bridge.php:381
+msgid "Trop de messages."
+msgstr "Too many messages."
+
+#: inc/core-bridge.php:386
+msgid "Message vide ou trop long."
+msgstr "Empty or too long message."
+
+#: inc/core-bridge.php:469
+msgid "Réponse vide de CORE."
+msgstr "Empty answer from CORE."
+
+#: inc/core-bridge.php:501
+msgid "Aucune extension CORE ne répond."
+msgstr "No CORE plugin is answering."
+
+#: inc/core-bridge.php:611
+msgid "Le test s’applique aux modes « Passerelle HTTP » et « Extension PHP »."
+msgstr "The test applies to the “HTTP gateway” and “PHP plugin” modes."
+
+#: inc/core-bridge.php:619
+msgid "Configuration incomplète."
+msgstr "Incomplete configuration."
+
+#: inc/core-bridge.php:632
+msgid "Test de connexion depuis WordPress. Répondez brièvement."
+msgstr "Connection test from WordPress. Please answer briefly."
+
+#: inc/forms.php:41
+msgid "Messages"
+msgstr "Messages"
+
+#: inc/forms.php:42
+msgid "Message"
+msgstr "Message"
+
+#: inc/forms.php:66
+msgid "Demande générale"
+msgstr "General enquiry"
+
+#: inc/forms.php:87
+msgid "Merci, votre message a bien été envoyé. Nous vous répondons dans les meilleurs délais."
+msgstr "Thank you, your message has been sent. We will reply as soon as possible."
+
+#: inc/forms.php:89
+msgid "Merci de vérifier les champs obligatoires (nom, e-mail valide, message et consentement)."
+msgstr "Please check the required fields (name, valid email, message and consent)."
+
+#: inc/forms.php:91
+msgid "Le message n’a pas pu être envoyé. Merci de réessayer dans quelques instants."
+msgstr "The message could not be sent. Please try again in a few moments."
+
+#: inc/forms.php:104
+msgid "Nom et prénom"
+msgstr "Full name"
+
+#: inc/forms.php:108 inc/forms.php:226
+msgid "Entreprise"
+msgstr "Company"
+
+#: inc/forms.php:120 inc/forms.php:229
+msgid "Sujet"
+msgstr "Subject"
+
+#: inc/forms.php:128
+msgid "Votre message"
+msgstr "Your message"
+
+#: inc/forms.php:134
+msgid "J’accepte que mes données soient utilisées pour répondre à ma demande."
+msgstr "I agree that my data may be used to answer my request."
+
+#: inc/forms.php:138
+msgid "Politique de confidentialité"
+msgstr "Privacy policy"
+
+#: inc/forms.php:146
+msgid "Envoyer le message"
+msgstr "Send the message"
+
+#: inc/forms.php:147
+msgid "* Champs obligatoires"
+msgstr "* Required fields"
+
+#: inc/forms.php:225
+msgid "Nom"
+msgstr "Name"

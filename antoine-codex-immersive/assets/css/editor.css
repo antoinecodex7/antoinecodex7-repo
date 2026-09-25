@@ -1,0 +1,102 @@
+/* Styles de l'éditeur de blocs : aperçu fidèle du rendu public. */
+body,
+.editor-styles-wrapper {
+	background: #050508;
+	color: #f3f1ea;
+	font-family: "Manrope Variable", "Manrope", system-ui, sans-serif;
+	font-size: 17px;
+	line-height: 1.65;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6,
+.editor-post-title__input,
+.editor-styles-wrapper .wp-block-post-title {
+	font-family: "Syne Variable", "Syne", system-ui, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.035em;
+	line-height: 1.05;
+	color: #f3f1ea;
+}
+
+.editor-styles-wrapper p,
+.editor-styles-wrapper li {
+	color: #d2d0dc;
+}
+
+.editor-styles-wrapper a {
+	color: #f3f1ea;
+	text-decoration-color: #ff5500;
+}
+
+.editor-styles-wrapper code,
+.editor-styles-wrapper pre {
+	font-family: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+.editor-styles-wrapper blockquote,
+.editor-styles-wrapper .wp-block-quote {
+	border-left: 2px solid #c9a45c;
+	padding-left: 1.4em;
+	font-family: "Syne Variable", system-ui, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.25;
+}
+
+.editor-styles-wrapper .wp-block-button__link {
+	border-radius: 999px;
+	background: #ff5500;
+	color: #0b0b12;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper .wp-block-separator {
+	border: 0;
+	height: 1px;
+	background: linear-gradient(90deg, #ff5500, #c9a45c 30%, rgba(232, 228, 255, 0.09) 70%);
+}
+
+/* Styles de blocs du thème */
+.editor-styles-wrapper .is-style-acx-panel {
+	padding: 2rem;
+	border: 1px solid rgba(232, 228, 255, 0.18);
+	border-radius: 20px;
+	background: linear-gradient(180deg, rgba(22, 22, 36, 0.85), rgba(10, 10, 17, 0.9));
+}
+
+.editor-styles-wrapper .is-style-acx-light {
+	padding: 2rem;
+	border-radius: 20px;
+	background: #eeebe3;
+	color: #0b0b12;
+}
+
+.editor-styles-wrapper .is-style-acx-light p,
+.editor-styles-wrapper .is-style-acx-light h2,
+.editor-styles-wrapper .is-style-acx-light h3 {
+	color: #0b0b12;
+}
+
+.editor-styles-wrapper .is-style-acx-eyebrow {
+	font-family: "JetBrains Mono Variable", ui-monospace, monospace;
+	font-size: 0.74rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #ff5500;
+}
+
+.editor-styles-wrapper .is-style-acx-lead {
+	font-size: 1.25rem;
+	color: #aeacbd;
+}
+
+.editor-styles-wrapper .is-style-acx-ghost .wp-block-button__link {
+	background: transparent;
+	color: #f3f1ea;
+	border: 1px solid rgba(232, 228, 255, 0.18);
+}

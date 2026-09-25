@@ -1,0 +1,21 @@
+/*
+Theme Name: ANTOINE CODEX Immersive
+Theme URI: https://github.com/antoinecodex7/antoinecodex7-repo
+Author: ANTOINE CODEX
+Description: Thème immersif pour ANTOINE CODEX — conseil stratégique, diagnostic d'entreprise, automatisations IA, marketing & SEO, sites web, image corporate et mentorat à Nice et sur la Côte d'Azur. Champ de particules WebGL maison (sans dépendance), révélations au défilement, intégration serveur d'ANTOINE CODEX CORE, compatibilité Polylang/WPML et extensions SEO/formulaires.
+Version: 1.0.0
+Requires at least: 6.2
+Tested up to: 7.1
+Requires PHP: 7.4
+Copyright: (C) 2026 ANTOINE CODEX
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: antoine-codex-immersive
+Domain Path: /languages
+Tags: one-column, custom-menu, custom-logo, featured-images, translation-ready, wide-blocks
+*/
+
+/*
+ * Les styles du thème sont dans assets/css/main.css (chargé via wp_enqueue_style).
+ * Ce fichier ne contient que l'en-tête requis par WordPress.
+ */

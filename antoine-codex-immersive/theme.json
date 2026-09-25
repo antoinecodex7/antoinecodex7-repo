@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"color": {
+			"custom": true,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "void", "name": "Noir profond", "color": "#050508" },
+				{ "slug": "ink", "name": "Encre", "color": "#0a0a11" },
+				{ "slug": "bone", "name": "Os", "color": "#eeebe3" },
+				{ "slug": "orange", "name": "Orange signal", "color": "#ff5500" },
+				{ "slug": "gold", "name": "Or métallique", "color": "#c9a45c" },
+				{ "slug": "indigo", "name": "Indigo", "color": "#141236" }
+			]
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1344px"
+		},
+		"typography": {
+			"customFontSize": true,
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{ "slug": "small", "name": "Petit", "size": "0.9rem" },
+				{ "slug": "medium", "name": "Moyen", "size": "1.1rem" },
+				{ "slug": "large", "name": "Grand", "size": "clamp(1.4rem, 2.2vw, 2rem)" },
+				{ "slug": "x-large", "name": "Très grand", "size": "clamp(2rem, 4vw, 3.6rem)" }
+			],
+			"fontFamilies": [
+				{ "slug": "display", "name": "Syne (titres)", "fontFamily": "\"Syne Variable\", \"Syne\", system-ui, sans-serif" },
+				{ "slug": "body", "name": "Manrope (texte)", "fontFamily": "\"Manrope Variable\", \"Manrope\", system-ui, sans-serif" },
+				{ "slug": "mono", "name": "JetBrains Mono (étiquettes)", "fontFamily": "\"JetBrains Mono Variable\", ui-monospace, monospace" }
+			]
+		},
+		"spacing": {
+			"units": [ "px", "rem", "%", "vw", "vh" ]
+		}
+	}
+}
