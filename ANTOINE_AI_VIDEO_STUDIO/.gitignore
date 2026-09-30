@@ -1,0 +1,9 @@
+ComfyUI_windows_portable/
+downloads/
+user/
+logs/*
+!logs/.gitkeep
+outputs/*
+!outputs/.gitkeep
+*.kit_new
+__pycache__/
