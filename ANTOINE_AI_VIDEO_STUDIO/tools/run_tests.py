@@ -178,6 +178,10 @@ def analyze_video(path, sheet_path):
     problems = []
     if means.max() < 8:
         problems.append("черно видео")
+    dark = [int(i) for i in np.where(means < 10)[0]]
+    info["dark_frames"] = dark
+    if dark and means.max() >= 8:
+        problems.append(f"черни кадри {dark[0]}-{dark[-1]} ({len(dark)} бр.)")
     if info["per_frame_std_mean"] < 2:
         problems.append("еднороден/празен кадър")
     if info["mean_abs_frame_diff"] < 0.3 and info["first_last_diff"] < 1.0:
