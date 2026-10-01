@@ -3,6 +3,7 @@
 # - Ако portable вече съществува, НЕ го презаписва - само проверява версиите и GPU.
 param([switch]$SkipGpuTest)
 . "$PSScriptRoot\common.ps1"
+Assert-StudioLocation
 $stamp = Get-Stamp
 Start-Transcript -Path (Join-Path $LogsDir "install_$stamp.log") | Out-Null
 $info = [ordered]@{ time = (Get-Date).ToString('s') }

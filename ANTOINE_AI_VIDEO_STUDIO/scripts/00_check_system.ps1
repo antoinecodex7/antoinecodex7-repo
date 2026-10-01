@@ -15,7 +15,7 @@ $report.cpu = "$($cpu.Name.Trim()) - $($cpu.NumberOfCores) ядра / $($cpu.Num
 $report.ram_total_gb = [math]::Round($cs.TotalPhysicalMemory / 1GB, 1)
 $report.ram_free_gb  = [math]::Round($os.FreePhysicalMemory * 1KB / 1GB, 1)
 $report.pagefile = (Get-CimInstance Win32_PageFileUsage | ForEach-Object { "$($_.Name) $($_.AllocatedBaseSize) MB" }) -join '; '
-$report | Format-List os, cpu, ram_total_gb, ram_free_gb, pagefile
+[pscustomobject]@{ OS = $report.os; CPU = $report.cpu; RAM_total_GB = $report.ram_total_gb; RAM_free_GB = $report.ram_free_gb; Pagefile = $report.pagefile } | Format-List
 
 Write-Step 'NVIDIA GPU и драйвер'
 $nvsmi = Get-Command nvidia-smi -ErrorAction SilentlyContinue
@@ -24,7 +24,7 @@ if ($nvsmi) {
     $f = ($q | Select-Object -First 1).Split(',') | ForEach-Object { $_.Trim() }
     $report.gpu = [ordered]@{ name = $f[0]; driver = $f[1]; vram_total_mib = [int]$f[2]; vram_used_mib = [int]$f[3];
                               vram_free_mib = [int]$f[4]; compute_cap = $f[5]; temp_c = $f[6]; util_pct = $f[7] }
-    $report.gpu | Format-List
+    [pscustomobject]$report.gpu | Format-List
     $hdr = (& nvidia-smi) -join "`n"
     if ($hdr -match 'CUDA Version:\s*([\d\.]+)') { $report.gpu.driver_max_cuda = $Matches[1] }
     Write-Host $hdr
@@ -44,7 +44,7 @@ Write-Step 'Дисково пространство'
 $drive = (Split-Path -Qualifier $StudioRoot)
 $disk = Get-CimInstance Win32_LogicalDisk -Filter "DeviceID='$drive'"
 $report.disk = [ordered]@{ drive = $drive; free_gb = [math]::Round($disk.FreeSpace / 1GB, 1); total_gb = [math]::Round($disk.Size / 1GB, 1) }
-$report.disk | Format-List
+[pscustomobject]$report.disk | Format-List
 # ~2 GB архив + ~7 GB разархивиран portable + Wan ~17 GB + LTX ~16 GB + 20 GB резерв за кеш/изходи
 $report.disk.needed_estimate_gb = 62
 if ($report.disk.free_gb -lt 62) { Write-Host "ВНИМАНИЕ: препоръчително е поне ~62 GB свободни на $drive" -ForegroundColor Yellow }

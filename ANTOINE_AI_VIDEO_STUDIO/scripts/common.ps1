@@ -13,7 +13,15 @@ $UserDir      = Join-Path $StudioRoot 'user'
 $DownloadsDir = Join-Path $StudioRoot 'downloads'
 $ToolsDir     = Join-Path $StudioRoot 'tools'
 $PidFile      = Join-Path $LogsDir 'comfyui_server.json'
-$ListenHost   = '127.0.0.1'   # само localhost - никога 0.0.0.0
+$ListenHost   = '127.0.0.1'
+$ExpectedRoot = 'C:\AI\ANTOINE_AI_VIDEO_STUDIO'
+function Assert-StudioLocation {
+    if ($StudioRoot.TrimEnd('\') -ine $ExpectedRoot) {
+        Write-Host "ВНИМАНИЕ: студиото се изпълнява от $StudioRoot, а не от $ExpectedRoot." -ForegroundColor Yellow
+        Write-Host 'Пусни първо 0_COPY_KIT_TO_C_AI.bat и продължи от C:\AI\ANTOINE_AI_VIDEO_STUDIO.' -ForegroundColor Yellow
+        if ((Read-Host 'Да продължа ли въпреки това тук? (y/N)') -notmatch '^(y|yes|д|да)$') { exit 1 }
+    }
+}   # само localhost - никога 0.0.0.0
 
 foreach ($d in @($LogsDir, $InputsDir, $OutputsDir, $UserDir, $DownloadsDir)) {
     if (-not (Test-Path $d)) { New-Item -ItemType Directory -Path $d | Out-Null }
