@@ -1,0 +1,48 @@
+{
+  "title": "ВИДЕО 1: МЕЧТАТА, КОЯТО ЗАЦИКЛИ",
+  "audience": "За хора с идея, пари и желание, но без структура.",
+  "output_name": "video1_mechtata",
+  "fps": 24,
+  "seed": 20261001,
+  "style": "3D animated feature film style, Pixar-like stylized characters, soft cinematic lighting, smooth natural animation, keep the same characters and art style as the input image, no new text, no subtitles",
+  "scenes": [
+    {
+      "id": "01_plan",
+      "seconds": 3,
+      "image": "1.JPG",
+      "crop_frac": [0.0, 0.10, 1.0, 0.38],
+      "prompt": "A young man with curly dark hair sits at a wooden desk in a warm sunlit room, smiling with hope as he writes his plan with a pencil, glancing down at the paper and back up, sunlight flickering through the window. Slow gentle push-in."
+    },
+    {
+      "id": "02_otchayanie",
+      "seconds": 5,
+      "image": "2.JPG",
+      "prompt": "The young man holds his head in his hands in deep despair and helplessness, tears running down his cheeks, he slowly rocks and lowers his head, crumpled papers on the desk, the desk lamp flickers softly, rain on the night window. Very slow camera drift, emotional and quiet."
+    },
+    {
+      "id": "03_namira_saita",
+      "seconds": 5,
+      "image": "3.JPG",
+      "prompt": "Split-screen video call: on the left the young man looks at his phone, surprise turns into a hopeful smile and he nods; on the right Antoine, a friendly man with glasses and grey hair, smiles warmly, nods and gestures reassuringly while talking. Sea view behind Antoine, gentle natural motion."
+    },
+    {
+      "id": "04_antoine_vliza",
+      "seconds": 5,
+      "image": "4.JPG",
+      "prompt": "Antoine keeps his hand on the young man's shoulder and smiles warmly while holding the glowing blue tablet steady; the young man looks up at him and his worried face slowly turns into a relieved smile. Golden sunbeams and floating dust particles move through the room. Slow push-in."
+    },
+    {
+      "id": "05_zaedno",
+      "seconds": 5,
+      "image": "5.JPG",
+      "fallback_image": "4.JPG",
+      "prompt": "Antoine and the young man lean together over the desk, Antoine points at the glowing tablet and the business plan papers, the young man nods and smiles with growing confidence; the room gradually fills with warm golden light. Slow orbiting camera movement."
+    },
+    {
+      "id": "06_kafeneto",
+      "seconds": 5,
+      "image": "6.JPG",
+      "prompt": "The young man stands in front of his newly opened cozy cafe at golden hour, tears of happiness run down his cheeks as he smiles, he takes a deep breath and looks at the cafe; string lights twinkle, people inside move and chat, leaves sway in the breeze. Slow cinematic push-in."
+    }
+  ]
+}
