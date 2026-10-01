@@ -71,7 +71,7 @@ PyTorch с CUDA 13.0 и изрично забранява варианта cu126
 |---|---|---|---|
 | **Wan 2.2 TI2V 5B** | `wan2.2_ti2v_5B_fp16.safetensors` (diffusion_models), `wan2.2_vae.safetensors` (vae) | Comfy-Org/Wan_2.2_ComfyUI_Repackaged (препакетирано от Wan-AI/Wan2.2-TI2V-5B, посочено в официалния ComfyUI template) | Apache 2.0 (Wan-AI) |
 | Text encoder за Wan | `umt5_xxl_fp8_e4m3fn_scaled.safetensors` (text_encoders) | Comfy-Org/Wan_2.1_ComfyUI_repackaged | Apache 2.0 (UMT5, Google) |
-| **LTX-Video 2B 0.9.8 distilled** | `ltxv-2b-0.9.8-distilled.safetensors` (checkpoints, съдържа VAE) | Lightricks/LTX-Video | ⚠ **Не е потвърден в тази сесия** (HF блокиран). По-старите 2B версии са под OpenRail-M, но за 0.9.8 може да е различен. Стъпка 3 чете лиценза от model card-а и го записва в `logs\models_manifest.json`. **Прочети го преди търговска употреба.** |
+| **LTX-Video 2B 0.9.8 distilled** | `ltxv-2b-0.9.8-distilled.safetensors` (checkpoints, съдържа VAE) | Lightricks/LTX-Video | **LTXV Open Weights License 0.X** (15.04.2025, важи за v0.9.6 и по-новите). Безплатен за компании с годишен приход **под $10 млн.**; над тази граница е нужен платен търговски лиценз. Ограничения в Attachment A, вкл. **(e): машинно генерираното съдържание трябва изрично да се обозначава като такова**, без deepfakes без съгласие. Потвърдено от `LTX-Video-Open-Weights-License-0.X.txt` на 2026-10-01 |
 | Text encoder за LTX | `t5xxl_fp16.safetensors` (text_encoders) | comfyanonymous/flux_text_encoders (посочен в официалния ComfyUI LTXV template) | Apache 2.0 (T5 v1.1, Google) |
 | Резерва: Wan 2.1 T2V 1.3B | само с `02_download_models.ps1 -Set wan21_fallback` | Comfy-Org/Wan_2.1_ComfyUI_repackaged | Apache 2.0 |
 
