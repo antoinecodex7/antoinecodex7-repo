@@ -4,7 +4,8 @@ param(
     [string]$Storyboard = 'storyboards\video1_mechtata.json',
     [ValidateSet('draft', 'final')][string]$Quality = 'draft',
     [string[]]$Only = @(),
-    [string]$Resume = ''
+    [string]$Resume = '',
+    [switch]$PreviewLocks
 )
 . "$PSScriptRoot\common.ps1"
 if (-not (Test-PortableInstalled)) { throw 'Първо пусни 2_INSTALL_COMFYUI.bat' }
@@ -12,6 +13,7 @@ $Only = @($Only | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() 
 $sbPath = if ([System.IO.Path]::IsPathRooted($Storyboard)) { $Storyboard } else { Join-Path $StudioRoot $Storyboard }
 
 $s = Get-RunningStudio
+if ($PreviewLocks) { $s = [pscustomobject]@{ port = 0; url = '-' } }
 if (-not $s) {
     Write-Step 'Стартиране на ComfyUI в отделен прозорец'
     Start-Process powershell.exe -ArgumentList @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', (Join-Path $PSScriptRoot 'start_studio.ps1'), '-NoBrowser')
