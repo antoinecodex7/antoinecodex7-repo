@@ -40,13 +40,17 @@ TESTS = {
                 "checkpoint": "ltxv-2b-0.9.8-distilled.safetensors (+ t5xxl_fp16)"},
     "wan_t2v_720p": {"file": "wan22_ti2v5b_text_to_video_720p.api.json", "title": "Wan 2.2 TI2V 5B - text-to-video 720p",
                      "checkpoint": "wan2.2_ti2v_5B_fp16.safetensors (+ umt5_xxl_fp8_e4m3fn_scaled, wan2.2_vae)"},
+    "wan14b_t2v": {"file": "wan22_a14b_text_to_video_480p.api.json", "title": "Wan 2.2 A14B fp8 - text-to-video 480p",
+                   "checkpoint": "wan2.2_t2v_high/low_noise_14B_fp8_scaled (+ umt5_xxl_fp8_e4m3fn_scaled, wan_2.1_vae)"},
+    "wan14b_i2v": {"file": "wan22_a14b_image_to_video_480p.api.json", "title": "Wan 2.2 A14B fp8 - image-to-video 480p",
+                   "checkpoint": "wan2.2_i2v_high/low_noise_14B_fp8_scaled (+ umt5_xxl_fp8_e4m3fn_scaled, wan_2.1_vae)"},
     # Без модел: проверява API, websocket, запис на MP4, видео-проверката и прекъсването. НЕ е AI генерация.
     "smoke_no_model": {"file": None, "title": "Smoke test без модел (не е AI генерация)", "checkpoint": "-"},
 }
 
 LOADER_NODES = {"UNETLoader", "CLIPLoader", "VAELoader", "CheckpointLoaderSimple", "LoadImage"}
-ENCODE_NODES = {"CLIPTextEncode", "LTXVConditioning", "Wan22ImageToVideoLatent", "EmptyLTXVLatentVideo", "LTXVImgToVideo"}
-SAMPLER_NODES = {"KSampler", "SamplerCustom"}
+ENCODE_NODES = {"CLIPTextEncode", "WanImageToVideo", "EmptyHunyuanLatentVideo", "LTXVConditioning", "Wan22ImageToVideoLatent", "EmptyLTXVLatentVideo", "LTXVImgToVideo"}
+SAMPLER_NODES = {"KSampler", "SamplerCustom", "KSamplerAdvanced"}
 DECODE_NODES = {"VAEDecode"}
 SAVE_NODES = {"CreateVideo", "SaveVideo"}
 
@@ -308,6 +312,8 @@ def reduced_frames(wf):
             inp["length"] = 49
         if node["class_type"] == "EmptyLTXVLatentVideo":
             inp["length"] = 49
+        if node["class_type"] in ("WanImageToVideo", "EmptyHunyuanLatentVideo"):
+            inp["length"] = 49
     return wf
 
 
@@ -315,10 +321,13 @@ def params_of(wf):
     p = {}
     for node in wf.values():
         c, i = node["class_type"], node["inputs"]
-        if c in ("Wan22ImageToVideoLatent", "EmptyLTXVLatentVideo"):
+        if c in ("Wan22ImageToVideoLatent", "EmptyLTXVLatentVideo", "WanImageToVideo", "EmptyHunyuanLatentVideo"):
             p.update(width=i["width"], height=i["height"], frames=i["length"])
         elif c == "KSampler":
             p.update(seed=i["seed"], steps=i["steps"], cfg=i["cfg"], sampler=i["sampler_name"], scheduler=i["scheduler"])
+        elif c == "KSamplerAdvanced" and i.get("add_noise") == "enable":
+            p.update(seed=i["noise_seed"], steps=i["steps"], cfg=i["cfg"], sampler=i["sampler_name"],
+                     scheduler=i["scheduler"], high_noise_until_step=i["end_at_step"])
         elif c == "SamplerCustom":
             p.update(seed=i["noise_seed"], cfg=i["cfg"])
         elif c == "ManualSigmas":
@@ -342,6 +351,7 @@ async def main():
     ap.add_argument("--interrupt-test", action="store_true",
                     help="стартира wan_t2v и го прекъсва след 20s, за да докаже спирането на задача")
     ap.add_argument("--no-retry", action="store_true")
+    ap.add_argument("--image", default=None, help="входна снимка от inputs/ за image-to-video тестовете")
     args = ap.parse_args()
 
     os.makedirs(LOGS, exist_ok=True)
@@ -372,6 +382,8 @@ async def main():
                 for node in wf.values():
                     if node["class_type"] == "SaveVideo":
                         node["inputs"]["filename_prefix"] = prefix_tag
+                    if node["class_type"] == "LoadImage" and args.image:
+                        node["inputs"]["image"] = args.image
             else:
                 wf = smoke_workflow(prefix_tag)
             attempts = [wf] if (args.no_retry or is_interrupt or not spec["file"]) else [wf, "retry"]

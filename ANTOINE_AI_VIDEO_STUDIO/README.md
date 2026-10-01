@@ -24,6 +24,13 @@
 
 Ако нещо спре, логовете са в `logs\`. Изпрати ми `logs\*.log`, `logs\*.json` и `TEST_RESULTS.md`.
 
+## Wan 2.2 A14B (по-високо качество, по-бавно)
+
+1. `5_DOWNLOAD_WAN14B.bat`: изтегля ~57 GB, T2V и I2V.
+2. `6_TEST_WAN14B.bat`: реален тест 480p. Въведи името на снимката от `inputs\`, например `DOkDu.jpg`,
+   или натисни Enter за официалния пример.
+3. В интерфейса: workflows `wan22_a14b_text_to_video_480p` и `wan22_a14b_image_to_video_480p`.
+
 ## Ежедневна употреба
 
 - **Старт:** `START_STUDIO.bat` → отваря `http://127.0.0.1:8188` (или следващия свободен порт; точният URL е в заглавието на прозореца и в `logs\comfyui_server.json`).

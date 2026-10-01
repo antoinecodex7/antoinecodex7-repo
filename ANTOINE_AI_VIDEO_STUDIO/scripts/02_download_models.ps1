@@ -4,7 +4,7 @@
 #   .\02_download_models.ps1 -Set wan21_fallback   (САМО при доказан проблем с Wan 2.2)
 #   добави -DryRun, за да видиш само плана, размерите и лицензите.
 param(
-    [Parameter(Mandatory = $true)][ValidateSet('wan', 'ltx', 'wan21_fallback')][string]$Set,
+    [Parameter(Mandatory = $true)][ValidateSet('wan', 'ltx', 'wan14b_t2v', 'wan14b_i2v', 'wan21_fallback')][string]$Set,
     [switch]$DryRun
 )
 . "$PSScriptRoot\common.ps1"
@@ -23,5 +23,6 @@ if ($also.Count) { $pyArgs += '--also-search'; $pyArgs += $also }
 if ($DryRun) { $pyArgs += '--dry-run' }
 & $PythonExe @pyArgs
 $code = $LASTEXITCODE
+Sync-Workflows
 Stop-Transcript | Out-Null
 exit $code

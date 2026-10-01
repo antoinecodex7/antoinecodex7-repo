@@ -2,6 +2,7 @@
 param([switch]$NoBrowser, [int]$Port = 0)
 . "$PSScriptRoot\common.ps1"
 if (-not (Test-PortableInstalled)) { throw 'ComfyUI не е инсталиран. Пусни 2_INSTALL_COMFYUI.bat' }
+Sync-Workflows
 $running = Get-RunningStudio
 if ($running) {
     Write-Host "Студиото вече работи: $($running.url)" -ForegroundColor Green

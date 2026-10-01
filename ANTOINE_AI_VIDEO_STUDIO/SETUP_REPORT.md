@@ -168,6 +168,20 @@ realistic architecture, natural motion, no text, no logos.“*
 checkpoint обаче е неофициална (виж т. 3), а лицензът трябва да се провери.
 **Препоръката ще бъде потвърдена или коригирана след реалните измервания.**
 
+## 6a. Следваща проба: Wan 2.2 A14B (подготвено 2026-10-01, още НЕ е изпълнено)
+
+- Файлове: `wan2.2_{t2v,i2v}_{high,low}_noise_14B_fp8_scaled.safetensors` (около 14,3 GB всеки, общо ~57 GB) и
+  `wan_2.1_vae.safetensors` от Comfy-Org/Wan_2.2_ComfyUI_Repackaged, както в официалните ComfyUI templates
+  `video_wan2_2_14B_t2v` / `_i2v`. Лиценз Apache 2.0 (Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-I2V-A14B),
+  проверява се автоматично от скрипта.
+- fp8 е официалният вариант от template-а, не е допълнителна quantization. **lightx2v 4-step LoRA НЕ се
+  използва:** качествен режим с 20 стъпки, CFG 3,5, euler/simple, shift 5. High-noise експертът работи за
+  стъпки 0–10, low-noise за 10–20.
+- Проба: 832×480, 81 кадъра, 16 FPS (5 s), seed 20260930. Workflows: `wan22_a14b_text_to_video_480p`,
+  `wan22_a14b_image_to_video_480p`.
+- Стартиране: `5_DOWNLOAD_WAN14B.bat`, после `6_TEST_WAN14B.bat` (пита за име на входна снимка).
+- Очаквано: значително по-бавно от 5B, защото двата 14 GB експерта се сменят в 16 GB VRAM чрез RAM.
+
 ## 7. Известни ограничения
 
 - Нищо не е тествано на реалната машина. Възможни са дребни корекции в Windows скриптовете при първото пускане.

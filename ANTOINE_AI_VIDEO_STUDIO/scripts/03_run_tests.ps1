@@ -5,9 +5,12 @@
 param(
     [string[]]$Tests = @('smoke_no_model', 'wan_t2v', 'wan_i2v', 'ltx_t2v'),
     [switch]$Include720p,
-    [switch]$SkipInterruptTest
+    [switch]$SkipInterruptTest,
+    [string]$Image = ''
 )
 . "$PSScriptRoot\common.ps1"
+# от .bat (-File) списъкът идва като един низ 'a,b' -> разделяме го
+$Tests = @($Tests | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 if (-not (Test-PortableInstalled)) { throw 'Първо пусни 2_INSTALL_COMFYUI.bat' }
 
 # --- Ollama: показваме заетата памет; разтоварване САМО с твое потвърждение, моделите НЕ се изтриват.
@@ -41,6 +44,7 @@ Write-Host "ComfyUI: $($s.url)" -ForegroundColor Green
 $runner = Join-Path $ToolsDir 'run_tests.py'
 $argsList = @('-s', $runner, '--port', $s.port, '--tests') + $Tests
 if (-not $SkipInterruptTest) { $argsList += '--interrupt-test' }
+if ($Image) { $argsList += @('--image', $Image) }
 & $PythonExe @argsList
 $code = $LASTEXITCODE
 

@@ -32,6 +32,16 @@ $env:PYTHONUTF8 = '1'
 $env:PYTHONIOENCODING = 'utf-8'
 try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
 
+function Sync-Workflows {
+    # Копира НОВИТЕ именувани workflows в менюто Workflows на ComfyUI; променени от теб файлове не се пипат.
+    $wfTarget = Join-Path $UserDir 'default\workflows'
+    New-Item -ItemType Directory -Force $wfTarget | Out-Null
+    Get-ChildItem (Join-Path $WorkflowsDir 'ui') -Filter *.json | ForEach-Object {
+        $dst = Join-Path $wfTarget $_.Name
+        if (-not (Test-Path $dst)) { Copy-Item $_.FullName $dst; Write-Host "добавен workflow $($_.Name)" }
+    }
+}
+
 function Get-Stamp { Get-Date -Format 'yyyyMMdd_HHmmss' }
 
 function Write-Step([string]$Text) {
