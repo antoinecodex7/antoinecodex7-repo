@@ -4,45 +4,189 @@
   "output_name": "video1_mechtata",
   "fps": 24,
   "seed": 20261001,
-  "style": "3D animated feature film style, Pixar-like stylized characters, soft cinematic lighting, smooth natural animation, keep the same characters and art style as the input image, no new text, no subtitles",
+  "style": "3D animated feature film style, Pixar-like stylized characters, soft cinematic lighting, smooth natural animation, keep the same characters, art style and all existing signs and text exactly as in the input image, static locked-off camera, no new text, no subtitles",
   "scenes": [
     {
       "id": "01_plan",
       "seconds": 3,
       "image": "1.JPG",
-      "crop_frac": [0.0, 0.10, 1.0, 0.38],
-      "prompt": "A young man with curly dark hair sits at a wooden desk in a warm sunlit room, smiling with hope as he writes his plan with a pencil, glancing down at the paper and back up, sunlight flickering through the window. Slow gentle push-in."
+      "crop_frac": [
+        0.0,
+        0.1,
+        1.0,
+        0.38
+      ],
+      "prompt": "A young man with curly dark hair sits at a wooden desk in a warm sunlit room, smiling with hope as he writes his plan, glancing down at the paper and back up, his hair moves slightly, sunlight flickers through the window. Static camera.",
+      "text_lock": {
+        "1.JPG": [
+          [
+            0.835,
+            0.12,
+            0.165,
+            0.23
+          ]
+        ]
+      }
     },
     {
       "id": "02_otchayanie",
       "seconds": 5,
       "image": "2.JPG",
-      "prompt": "The young man holds his head in his hands in deep despair and helplessness, tears running down his cheeks, he slowly rocks and lowers his head, crumpled papers on the desk, the desk lamp flickers softly, rain on the night window. Very slow camera drift, emotional and quiet."
+      "prompt": "The young man holds his head in his hands in deep despair and helplessness, tears running down his cheeks, his shoulders tremble and he slowly lowers his head, the desk lamp flickers softly, rain drops run down the night window. Static camera, emotional and quiet.",
+      "crop_frac": [
+        0.0,
+        0.0,
+        1.0,
+        0.825
+      ],
+      "text_lock": {
+        "2.JPG": [
+          [
+            0.02,
+            0.07,
+            0.115,
+            0.17
+          ],
+          [
+            0.02,
+            0.21,
+            0.12,
+            0.12
+          ],
+          [
+            0.02,
+            0.62,
+            0.2,
+            0.2
+          ],
+          [
+            0.37,
+            0.67,
+            0.14,
+            0.08
+          ]
+        ]
+      }
     },
     {
       "id": "03_namira_saita",
       "seconds": 5,
       "image": "3.JPG",
-      "prompt": "Split-screen video call: on the left the young man looks at his phone, surprise turns into a hopeful smile and he nods; on the right Antoine, a friendly man with glasses and grey hair, smiles warmly, nods and gestures reassuringly while talking. Sea view behind Antoine, gentle natural motion."
+      "prompt": "Split-screen video call: on the left the young man looks at his phone, surprise turns into a hopeful smile and he nods; on the right Antoine, a friendly man with glasses and grey hair, smiles warmly, nods and gestures reassuringly while talking. Leaves and flowers sway gently by the sea window. Static camera.",
+      "crop_frac": [
+        0.0,
+        0.0,
+        1.0,
+        0.82
+      ],
+      "text_lock": {
+        "3.JPG": [
+          [
+            0.565,
+            0.0,
+            0.435,
+            0.095
+          ],
+          [
+            0.765,
+            0.785,
+            0.095,
+            0.07
+          ]
+        ]
+      }
     },
     {
       "id": "04_antoine_vliza",
       "seconds": 5,
       "image": "4.JPG",
-      "prompt": "Antoine keeps his hand on the young man's shoulder and smiles warmly while holding the glowing blue tablet steady; the young man looks up at him and his worried face slowly turns into a relieved smile. Golden sunbeams and floating dust particles move through the room. Slow push-in."
+      "prompt": "Antoine keeps his hand on the young man's shoulder and smiles warmly while holding the glowing blue tablet perfectly still; the young man looks up at him and his worried face slowly turns into a relieved smile. Golden sunbeams and floating dust particles drift through the room. Static camera.",
+      "crop_frac": [
+        0.0,
+        0.03,
+        1.0,
+        0.825
+      ],
+      "text_lock": {
+        "4.JPG": [
+          [
+            0.338,
+            0.558,
+            0.17,
+            0.168
+          ]
+        ]
+      }
     },
     {
       "id": "05_zaedno",
       "seconds": 5,
       "image": "5.JPG",
       "fallback_image": "4.JPG",
-      "prompt": "Antoine and the young man lean together over the desk, Antoine points at the glowing tablet and the business plan papers, the young man nods and smiles with growing confidence; the room gradually fills with warm golden light. Slow orbiting camera movement."
+      "prompt": "Antoine and the young man talk and smile together, the young man nods with growing confidence while the glowing tablet stays still, the room gradually fills with warm golden light, dust particles sparkle in the sunbeams. Static camera.",
+      "crop_frac": [
+        0.0,
+        0.03,
+        1.0,
+        0.825
+      ],
+      "text_lock": {
+        "4.JPG": [
+          [
+            0.338,
+            0.558,
+            0.17,
+            0.168
+          ]
+        ]
+      }
     },
     {
       "id": "06_kafeneto",
       "seconds": 5,
       "image": "6.JPG",
-      "prompt": "The young man stands in front of his newly opened cozy cafe at golden hour, tears of happiness run down his cheeks as he smiles, he takes a deep breath and looks at the cafe; string lights twinkle, people inside move and chat, leaves sway in the breeze. Slow cinematic push-in."
+      "prompt": "The young man stands in front of his newly opened cozy cafe at golden hour, tears of happiness run down his cheeks as he smiles and takes a deep breath; string lights twinkle, people inside move and chat, leaves sway in the breeze. Static camera.",
+      "crop_frac": [
+        0.0,
+        0.0,
+        1.0,
+        0.82
+      ],
+      "text_lock": {
+        "6.JPG": [
+          [
+            0.385,
+            0.02,
+            0.44,
+            0.165
+          ],
+          [
+            0.4,
+            0.272,
+            0.37,
+            0.065
+          ],
+          [
+            0.575,
+            0.425,
+            0.075,
+            0.18
+          ],
+          [
+            0.785,
+            0.62,
+            0.16,
+            0.33
+          ],
+          [
+            0.905,
+            0.43,
+            0.07,
+            0.17
+          ]
+        ]
+      }
     }
-  ]
+  ],
+  "text_lock_note": "text_lock: правоъгълници [x, y, ширина, височина] като части (0-1) от ОРИГИНАЛНАТА снимка; проверка с --preview-locks"
 }

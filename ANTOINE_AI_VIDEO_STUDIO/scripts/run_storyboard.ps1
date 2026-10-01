@@ -22,6 +22,7 @@ Write-Host "ComfyUI: $($s.url)  (прогресът се вижда и там)" 
 $a = @('-s', (Join-Path $ToolsDir 'run_storyboard.py'), '--port', $s.port, '--storyboard', $sbPath, '--quality', $Quality)
 if ($Only.Count) { $a += '--only'; $a += $Only }
 if ($Resume) { $a += @('--resume', $Resume) }
+if ($PreviewLocks) { $a += '--preview-locks' }
 & $PythonExe @a
 $last = Get-ChildItem (Join-Path $OutputsDir 'storyboards') -Directory -ErrorAction SilentlyContinue | Sort-Object LastWriteTime | Select-Object -Last 1
 if ($last) { Write-Host "Резултат: $($last.FullName)" -ForegroundColor Green; Start-Process explorer.exe $last.FullName }
