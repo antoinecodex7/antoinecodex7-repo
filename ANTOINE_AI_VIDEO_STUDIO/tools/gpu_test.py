@@ -39,13 +39,18 @@ try:
     for dtype in (torch.float16, torch.bfloat16):
         x = torch.randn(8192, 8192, device=dev, dtype=dtype)
         y = torch.randn(8192, 8192, device=dev, dtype=dtype)
-        torch.cuda.synchronize()
-        t = time.perf_counter()
-        for _ in range(10):
+        for _ in range(3):  # загряване: зареждане на cuBLAS ядрата и избор на алгоритъм
             z = x @ y
         torch.cuda.synchronize()
-        el = time.perf_counter() - t
-        res[f"{str(dtype).split('.')[-1]}_matmul_tflops"] = round(10 * 2 * 8192**3 / el / 1e12, 1)
+        best = None
+        for _ in range(3):  # най-доброто от 3 измервания по 10 умножения
+            t = time.perf_counter()
+            for _ in range(10):
+                z = x @ y
+            torch.cuda.synchronize()
+            el = time.perf_counter() - t
+            best = el if best is None else min(best, el)
+        res[f"{str(dtype).split('.')[-1]}_matmul_tflops"] = round(10 * 2 * 8192**3 / best / 1e12, 1)
         assert torch.isfinite(z).all().item()
         del x, y, z
 
