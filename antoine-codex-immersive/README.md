@@ -1,6 +1,6 @@
 # ANTOINE CODEX Immersive — WordPress тема
 
-Версия 1.0.0 · WordPress 6.2+ (тествана на 7.1.2) · PHP 7.4+ (тествана на 8.4) · лиценз GPL v2+
+Версия 1.1.0 · WordPress 6.2+ (тествана на 7.1.2) · PHP 7.4+ (тествана на 8.4) · лиценз GPL v2+
 
 Класическа WordPress тема за ANTOINE CODEX: почти черен фон, индиго и метално злато, оранжев акцент `#FF5500`,
 собствено WebGL поле от частици („скрита структура в данните“), разкриване при скрол, светла секция „Méthode“
@@ -110,6 +110,32 @@ JS API: `ACXCore.open()`, `ACXCore.close()`, `ACXCore.send('…')`; всяка �
 - **Редактор:** стилове на блокове (Panneau, Section claire, Étiquette monospace, Chapeau, Contour, Étapes numérotées) и
   3 шаблона в категория „ANTOINE CODEX“ за оформяне на съществуващото съдържание. Шаблон „Pleine largeur“ за Elementor и др.
 
+## 3a. Брояч на посетителите по държави
+
+В долната част на всяка страница, над footer-а, има секция **„Visiteurs“**: общ брой посетители, посетители днес,
+брой държави и графика по държави със знамената им (топ 10 + „Autres pays“). Вижда се от всички посетители.
+Вие виждате подробностите в администрацията:
+- **Табло (Dashboard)** → widget „Visiteurs — ANTOINE CODEX“;
+- **Apparence → Statistiques visiteurs** → период (7 дни / 30 дни / 12 месеца / от началото), графика по дни,
+  графика и таблица по държави (посетители, прегледани страници, %), бутон за нулиране.
+
+Как работи:
+- При всяко отваряне на страница браузърът изпраща сигнал към `/wp-json/antoine-codex/v1/visit`. Това работи и при кеширани страници,
+  а числата в секцията се обновяват на живо.
+- **Държавата** се определя по IP-то: първо от header на CDN/хостинга (Cloudflare `CF-IPCountry`, CloudFront и др.),
+  иначе от **локалната IP база в темата** (`data/geoip`, ~1,7 MB, данни на NRO, лиценз CC BY 4.0). Не се вика никаква външна услуга.
+- **„Visiteurs“** = уникални посетители за деня, сумирани по дни (без cookies човек, който се върне друг ден, се брои отново).
+  **„Pages vues“** = всички отворени страници.
+- Ботовете се изключват, логнатите администратори и редактори не се броят (може да се промени), лимит от 60 страници в минута на посетител срещу изкуствено надуване.
+- **GDPR:** IP адресът **не се записва никъде**. За да се брои един човек веднъж на ден, се пази необратим хеш с дневна „сол“, който се изтрива до 48 часа.
+  Пазят се само сборове по ден и държава. Темата добавя готов текст в *Réglages → Confidentialité* (предложение за политиката за поверителност).
+- Настройки: *Apparence → Personnaliser → ANTOINE CODEX — Thème → Compteur de visiteurs*
+  (вкл./изкл. броенето, показване на публичната секция, броене на администраторите, брой показвани държави).
+- Ако сайтът е зад Cloudflare или друг proxy, държавата идва от header-а. Ако proxy-то подменя IP-то без header за държава,
+  подайте реалния IP чрез филтъра `acx_client_ip`.
+- Точност: IPv4 по блокове /24, IPv6 по блокове /32. На ниво държава грешките са редки (VPN показва държавата на VPN сървъра).
+  Базата е от ноември 2026 и може да се обнови с нова версия на темата.
+
 ## 4. Проверки (реално изпълнени)
 
 Среда: WordPress 7.1.2 + SQLite, PHP 8.4, Chromium (Playwright) с софтуерен WebGL (SwiftShader).
@@ -130,6 +156,7 @@ JS API: `ACXCore.open()`, `ACXCore.close()`, `ACXCore.send('…')`; всяка �
 | Ключ/endpoint в публичния HTML | ✅ не присъстват |
 | Хоризонтален overflow на телефон | ✅ няма (390/390) |
 | Polylang (реален, версия 3.9-beta1 от GitHub) | ✅ FR/EN превключвател, EN URL на ключовите страници, EN текстове на EN страници, FR по подразбиране |
+| Брояч на посетителите (v1.1.0) | ✅ 16/16 тестови IP адреса → правилна държава (FR, BG, US, GB, NL, RU, AU, IPv6), 0,02 ms на търсене; повторен посетител = 1 посетител + 2 прегледа; header на Cloudflare; ботове и чужд домейн се игнорират; логнат администратор не се брои; в базата няма нито един IP адрес; публична секция, widget и страница със статистика (desktop + mobile, без overflow, без JS грешки, видима без JavaScript и при reduced motion); Customizer |
 | PHP грешки/предупреждения от темата в `debug.log` | ✅ няма (само предупреждения, че wordpress.org е недостъпен от средата) |
 
 ## 5. Какво НЕ можа да се тества (честно)
@@ -163,10 +190,12 @@ antoine-codex-immersive/
   header.php, footer.php, front-page.php, page.php, single.php, index.php, 404.php, searchform.php, comments.php
   page-templates/  template-diagnostic.php, -services, -methodologie, -fondateur, -contact, -fullwidth
   template-parts/  front/*.php (hero, manifesto, services, diagnostic, method, territory, founder), content-card.php
-  inc/             helpers, setup, enqueue, customizer, template-tags, multilingual, seo, blocks, forms, core-bridge, admin
+  inc/             visitors (брояч), countries-data, helpers, setup, enqueue, customizer, template-tags, multilingual, seo, blocks, forms, core-bridge, admin
   assets/css/      main.css (15.5 KB gzip), fonts.css, editor.css
   assets/js/       main.js (4.2 KB gzip), field.js (7.8 KB gzip, зарежда се отложено), core-chat.js (5.2 KB gzip)
   assets/fonts/    Syne, Manrope, JetBrains Mono (woff2, локално — без Google Fonts, RGPD) + лицензи OFL
+  assets/flags/    знамена SVG (MIT)
+  data/geoip/      IP → държава (CC BY 4.0, NRO)
   assets/img/      logo-ac.webp/.png (логото в хедъра), field-poster.webp/.jpg (статичен вариант на полето)
   languages/       antoine-codex-immersive.pot, en_US.po, en_US.mo
 ```

@@ -3,7 +3,7 @@ Contributors: antoinecodex
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,10 @@ Guide complet : README.md (installation, connexion de CORE, vérifications, limi
 
 == Changelog ==
 
+= 1.1.0 =
+* Logo AC dans l'en-tête.
+* Compteur de visiteurs par pays (anonyme, sans cookie) : section publique, widget du tableau de bord, page Apparence → Statistiques visiteurs.
+
 = 1.0.0 =
 * Première version.
 
@@ -43,5 +47,8 @@ Syne — (C) 2019 The Syne Project Authors — SIL Open Font License 1.1 (assets
 Manrope — (C) 2019 The Manrope Project Authors — SIL Open Font License 1.1 (assets/fonts/OFL-manrope.txt)
 JetBrains Mono — (C) 2020 The JetBrains Mono Project Authors — SIL Open Font License 1.1 (assets/fonts/OFL-jetbrains-mono.txt)
 Fichiers de polices fournis par le projet Fontsource (@fontsource-variable, MIT pour l'empaquetage).
+
+Drapeaux : country-flag-icons (C) 2020 @catamphetamine — licence MIT (assets/flags/LICENSE-country-flag-icons.txt).
+Base IP → pays : ip-location-db « geo-whois-asn-country », données (C) Number Resource Organization (NRO), licence CC BY 4.0 (data/geoip/LICENSE.txt).
 
 Toutes les illustrations (champ de particules, image statique, icônes SVG) sont originales et distribuées sous GPL v2 ou ultérieure.

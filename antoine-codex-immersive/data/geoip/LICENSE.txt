@@ -1,0 +1,6 @@
+Base IP → pays : « geo-whois-asn-country » du projet ip-location-db (https://github.com/sapics/ip-location-db),
+version 2.3.2026061719, convertie en tables binaires compactes (IPv4 par blocs /24, IPv6 par blocs /32).
+Données sous licence Creative Commons Attribution 4.0 International (CC BY 4.0).
+Attribution : Number Resource Organization (NRO) — https://www.nro.net/
+Format : enregistrements triés de 5 octets (IPv4 : 3 octets début de bloc /24 + 2 octets code pays)
+et 6 octets (IPv6 : 4 octets début de bloc /32 + 2 octets code pays). « -- » = inconnu.

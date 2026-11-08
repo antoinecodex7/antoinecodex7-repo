@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'ACX_VERSION', '1.0.0' );
+define( 'ACX_VERSION', '1.1.0' );
 define( 'ACX_DIR', get_template_directory() );
 define( 'ACX_URI', get_template_directory_uri() );
 
@@ -23,6 +23,7 @@ $acx_includes = array(
 	'inc/forms.php',          // Formulaire de contact de secours (optionnel).
 	'inc/core-bridge.php',    // ANTOINE CODEX CORE : passerelle serveur + panneau.
 	'inc/admin.php',          // Pages d'administration : réglages CORE et diagnostic de migration.
+	'inc/visitors.php',       // Compteur de visiteurs par pays (anonyme, sans cookie).
 );
 
 foreach ( $acx_includes as $acx_file ) {

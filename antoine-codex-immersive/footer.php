@@ -9,6 +9,8 @@ defined( 'ABSPATH' ) || exit;
 ?>
 </main>
 
+<?php acx_visits_public_section(); ?>
+
 <footer class="site-footer" id="contact-footer">
 	<div class="site-footer__top container">
 		<div class="site-footer__cta" data-reveal>

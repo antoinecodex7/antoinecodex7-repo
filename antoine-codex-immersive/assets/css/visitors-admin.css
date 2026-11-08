@@ -1,0 +1,33 @@
+/* Statistiques visiteurs — administration (fond clair de WordPress). */
+.acx-visits-admin__kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 12px 0 16px; }
+.acx-visits-admin__kpis div { padding: 10px 12px; border: 1px solid #dcdcde; border-radius: 6px; background: #fff; }
+.acx-visits-admin__kpis dt { font-size: 12px; color: #50575e; text-transform: uppercase; letter-spacing: .04em; }
+.acx-visits-admin__kpis dd { margin: 4px 0 0; font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; color: #1d2327; }
+#acx_visits_widget .acx-visits-admin__kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.acx-visits-admin__h { margin: 16px 0 8px; font-size: 13px; }
+.acx-visits-admin__ranges { display: flex; gap: 6px; margin: 12px 0; flex-wrap: wrap; }
+.acx-visits-admin__table { max-width: 760px; margin-top: 16px; }
+.acx-visits-admin__table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.acx-geo-chart { list-style: none; margin: 0 0 12px; padding: 0; max-width: 760px; display: grid; gap: 2px; }
+.acx-geo-chart__row { position: relative; display: grid; grid-template-columns: minmax(8rem, 13rem) minmax(0, 1fr) 4rem; align-items: center; gap: 10px; padding: 4px 6px; border-radius: 4px; margin: 0; }
+.acx-geo-chart__row:hover, .acx-geo-chart__row:focus { background: #f0f0f1; outline: none; }
+.acx-geo-chart__row:focus-visible { box-shadow: 0 0 0 2px #2271b1; }
+.acx-geo-chart__label { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.acx-geo-chart__flag { flex: none; width: 21px; height: 14px; border-radius: 2px; object-fit: cover; box-shadow: 0 0 0 1px rgba(0,0,0,.15); }
+.acx-geo-chart__flag--none { display: inline-block; background: #dcdcde; }
+.acx-geo-chart__name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #1d2327; }
+.acx-geo-chart__track { position: relative; height: 10px; }
+.acx-geo-chart__bar { position: absolute; inset: 0 auto 0 0; width: var(--w); min-width: 3px; border-radius: 0 4px 4px 0; background: #8a6a2c; }
+.acx-geo-chart__row--other .acx-geo-chart__bar { background: #8c8f94; }
+.acx-geo-chart__value { text-align: right; font-variant-numeric: tabular-nums; color: #1d2327; }
+.acx-geo-chart__tip { position: absolute; left: 50%; bottom: calc(100% + 4px); z-index: 3; padding: 4px 8px; border-radius: 4px; background: #1d2327; color: #fff; font-size: 12px; white-space: nowrap; pointer-events: none; opacity: 0; transform: translateX(-50%); transition: opacity .15s; }
+.acx-geo-chart__row:hover .acx-geo-chart__tip, .acx-geo-chart__row:focus .acx-geo-chart__tip { opacity: 1; }
+.acx-visits-days { max-width: 760px; margin: 8px 0 20px; }
+.acx-visits-days__max { font-size: 11px; color: #50575e; }
+.acx-visits-days__bars { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 2px; align-items: end; height: 140px; border-bottom: 1px solid #c3c4c7; border-top: 1px dashed #dcdcde; }
+.acx-visits-days__col { position: relative; height: var(--h); min-height: 1px; background: #8a6a2c; border-radius: 3px 3px 0 0; }
+.acx-visits-days__col:hover { background: #b08a3e; }
+.acx-visits-days__tip { position: absolute; bottom: calc(100% + 4px); left: 50%; transform: translateX(-50%); padding: 3px 6px; border-radius: 3px; background: #1d2327; color: #fff; font-size: 11px; white-space: nowrap; opacity: 0; pointer-events: none; z-index: 2; }
+.acx-visits-days__col:hover .acx-visits-days__tip { opacity: 1; }
+.acx-visits-days__axis { display: flex; justify-content: space-between; font-size: 11px; color: #50575e; margin-top: 4px; }
+@media (max-width: 782px) { .acx-visits-admin__kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
